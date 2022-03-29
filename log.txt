@@ -1,0 +1,1503 @@
+2022/03/29 14:07:36 Micro started
+2022/03/29 14:07:38 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0003989c0
+2022/03/29 14:07:38 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000384270
+2022/03/29 14:07:38 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000384840
+2022/03/29 14:07:39 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399080
+2022/03/29 14:07:40 snippets-plugin -> function Insert(snippetName) = nil
+2022/03/29 14:07:40 snippets-plugin -> function CursorWord(bp) = userdata: 0xc000384de0
+2022/03/29 14:07:40 snippets-plugin -> function EnsureSnippets()
+2022/03/29 14:07:40 snippets-plugin -> function ReadSnippets(filetype) = shell
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = #!/usr/bin/env sh
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = empty string
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = #!/usr/bin/env bash
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = #!/usr/bin/env bash
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = set -euo pipefail
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = IFS=$'\n\t'
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = if [[ ${1:condition} ]]; then
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	${0:#statements}
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = fi
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = elif [[ ${1:condition} ]]; then
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	${0:#statements}
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = for (( ${2:i} = 0; $2 < ${1:count}; $2++ )); do
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	${0:#statements}
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = done
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = for ${1:needle} in ${2:haystack} ; do
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	${0:#statements}
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = done
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = while [[ ${1:condition} ]]; do
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	${0:#statements}
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = done
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = until [[ ${1:condition} ]]; do
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	${0:#statements}
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = done
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = case ${1:word} in
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	${2:pattern})
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 		${0};;
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = esac
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = while getopts '${1:o}' ${2:opts}
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = do
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	case $$2 in
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	${3:o0})
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 		${0:#staments};;
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	esac
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = done
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = __ScriptVersion="${1:version}"
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = #===  FUNCTION  ================================================================
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = #         NAME:  usage
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = #  DESCRIPTION:  Display usage information.
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = #===============================================================================
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = function usage ()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = {
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	echo "Usage :  $${0:0} [options] [--]
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  =     Options:
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  =     -h|help       Display this message
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  =     -v|version    Display script version"
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = }    # ----------  end of function usage  ----------
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = #-----------------------------------------------------------------------
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = #  Handle command line arguments
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = #-----------------------------------------------------------------------
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = while getopts ":hv" opt
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = do
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  =   case $opt in
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	h|help     )  usage; exit 0   ;;
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	v|version  )  echo "$${0:0} -- Version $__ScriptVersion"; exit 0   ;;
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	* )  echo -e "\n  Option does not exist : $OPTARG\n"
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 		  usage; exit 1   ;;
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  =   esac    # --- end of case ---
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = done
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = shift $(($OPTIND-1))
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = if [ \$(id -u) -ne 0 ]; then exec sudo \$0; fi
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = ${1:function_name}() {
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	${0:#function_body}
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = }
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = function ${1:function_name}() {
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	${0:#function_body}
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = }
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = class ${1:nama_class}; (:)
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = {
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	public: app = ${0:nama_object}
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	def: ${0:#nama_class}::${0:#nama_object}(){
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 		
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	}
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = }; class.new: ${0:#nama_class} ${0:#panggil_class}
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = def: ${1:nama_fungsi}(){
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	global: ${0:#nama_variable} = "${0:#object_variable}"
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = }
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = curl -sL -A "${1:#user_agent}" -X ${1:#methods} --ssl --url "${1:url}" -d "${1:#data_request}"
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = frame="/_\|"
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = for x in {1..5}; do
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	for ((i = 0; i < ${#frame}; i++)); do
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 		sleep 0.1
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 		printf "\r${frame:i:1}"
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	done
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = done
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = # plugins bash moderen
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = . lib/moduler.sh
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = # depencies
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = Bash.import: text_display/colorama text_display/IO.ECHO
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = Bash.import: util/io.class util/IO.FUNC
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = Bash.import: util/operator util/IO.SYSTEM.var
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = # variable frame nya
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = var fr : "/_\|";
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = # loop untuk menjalankan frame per frame nya
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = for x in $(seq 1 9); do
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	# loop yg berfungsi sebagai alat gerak nya
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	for ((i = 0; i < ${#fr}; i++)); do
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 		delay: 0.1s
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 		Tulis.str "\r${fr:i:1}"
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = 	done
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = done
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = # jangan lupa follow github saya dan subscribe youtube saya wahai ploglamel
+2022/03/29 14:07:40 snippets-plugin -> function ReadSnippets(filetype) snippets = 
+2022/03/29 14:07:40 #!: Table ->
+2022/03/29 14:07:40   code: #!/usr/bin/env sh
+
+2022/03/29 14:07:40 bash: Table ->
+2022/03/29 14:07:40   code: #!/usr/bin/env bash
+2022/03/29 14:07:40 sbash: Table ->
+2022/03/29 14:07:40   code: #!/usr/bin/env bash
+set -euo pipefail
+IFS=$'\n\t'
+2022/03/29 14:07:40 if: Table ->
+2022/03/29 14:07:40   code: if [[ ${1:condition} ]]; then
+	${0:#statements}
+fi
+2022/03/29 14:07:40 elif: Table ->
+2022/03/29 14:07:40   code: elif [[ ${1:condition} ]]; then
+	${0:#statements}
+2022/03/29 14:07:40 for: Table ->
+2022/03/29 14:07:40   code: for (( ${2:i} = 0; $2 < ${1:count}; $2++ )); do
+	${0:#statements}
+done
+2022/03/29 14:07:40 fori: Table ->
+2022/03/29 14:07:40   code: for ${1:needle} in ${2:haystack} ; do
+	${0:#statements}
+done
+2022/03/29 14:07:40 wh: Table ->
+2022/03/29 14:07:40   code: while [[ ${1:condition} ]]; do
+	${0:#statements}
+done
+2022/03/29 14:07:40 until: Table ->
+2022/03/29 14:07:40   code: until [[ ${1:condition} ]]; do
+	${0:#statements}
+done
+2022/03/29 14:07:40 case: Table ->
+2022/03/29 14:07:40   code: case ${1:word} in
+	${2:pattern})
+		${0};;
+esac
+2022/03/29 14:07:40 go: Table ->
+2022/03/29 14:07:40   code: while getopts '${1:o}' ${2:opts}
+do
+	case $$2 in
+	${3:o0})
+		${0:#staments};;
+	esac
+done
+2022/03/29 14:07:40 sdir: Table ->
+2022/03/29 14:07:40   code: SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+2022/03/29 14:07:40 getopt: Table ->
+2022/03/29 14:07:40   code: __ScriptVersion="${1:version}"
+#===  FUNCTION  ================================================================
+#         NAME:  usage
+#  DESCRIPTION:  Display usage information.
+#===============================================================================
+function usage ()
+{
+	echo "Usage :  $${0:0} [options] [--]
+    Options:
+    -h|help       Display this message
+    -v|version    Display script version"
+}    # ----------  end of function usage  ----------
+#-----------------------------------------------------------------------
+#  Handle command line arguments
+#-----------------------------------------------------------------------
+while getopts ":hv" opt
+do
+  case $opt in
+	h|help     )  usage; exit 0   ;;
+	v|version  )  echo "$${0:0} -- Version $__ScriptVersion"; exit 0   ;;
+	* )  echo -e "\n  Option does not exist : $OPTARG\n"
+		  usage; exit 1   ;;
+  esac    # --- end of case ---
+done
+shift $(($OPTIND-1))
+2022/03/29 14:07:40 root: Table ->
+2022/03/29 14:07:40   code: if [ \$(id -u) -ne 0 ]; then exec sudo \$0; fi
+2022/03/29 14:07:40 fun-sh: Table ->
+2022/03/29 14:07:40   code: ${1:function_name}() {
+	${0:#function_body}
+}
+2022/03/29 14:07:40 fun: Table ->
+2022/03/29 14:07:40   code: function ${1:function_name}() {
+	${0:#function_body}
+}
+2022/03/29 14:07:40 class: Table ->
+2022/03/29 14:07:40   code: class ${1:nama_class}; (:)
+{
+	public: app = ${0:nama_object}
+	
+	def: ${0:#nama_class}::${0:#nama_object}(){
+		
+	}
+}; class.new: ${0:#nama_class} ${0:#panggil_class}
+2022/03/29 14:07:40 def:: Table ->
+2022/03/29 14:07:40   code: def: ${1:nama_fungsi}(){
+	global: ${0:#nama_variable} = "${0:#object_variable}"
+}
+2022/03/29 14:07:40 req: Table ->
+2022/03/29 14:07:40   code: curl -sL -A "${1:#user_agent}" -X ${1:#methods} --ssl --url "${1:url}" -d "${1:#data_request}"
+2022/03/29 14:07:40 anim: Table ->
+2022/03/29 14:07:40   code: frame="/_\|"
+for x in {1..5}; do
+	for ((i = 0; i < ${#frame}; i++)); do
+		sleep 0.1
+		printf "\r${frame:i:1}"
+	done
+done
+2022/03/29 14:07:40 import: Table ->
+2022/03/29 14:07:40   code: # plugins bash moderen
+. lib/moduler.sh
+# depencies
+Bash.import: text_display/colorama text_display/IO.ECHO
+Bash.import: util/io.class util/IO.FUNC
+Bash.import: util/operator util/IO.SYSTEM.var
+2022/03/29 14:07:40 %%buat_kan_saya_animasi_by_polygon: Table ->
+2022/03/29 14:07:40   code: # variable frame nya
+var fr : "/_\|";
+# loop untuk menjalankan frame per frame nya
+for x in $(seq 1 9); do
+	# loop yg berfungsi sebagai alat gerak nya
+	for ((i = 0; i < ${#fr}; i++)); do
+		delay: 0.1s
+		Tulis.str "\r${fr:i:1}"
+	done
+done
+# jangan lupa follow github saya dan subscribe youtube saya wahai ploglamel
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.clone(self)
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = #!/usr/bin/env bash
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.Prepare(self)
+2022/03/29 14:07:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007eb1d0
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.insert(self)
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.str(self)
+2022/03/29 14:07:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007eb380
+2022/03/29 14:07:40 snippets-plugin -> function Snippet.str(self)
+2022/03/29 14:07:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000854c60
+2022/03/29 14:07:41 snippets-plugin -> function Snippet.findLocation(self, loc) loc =  = userdata: 0xc0008558c0
+2022/03/29 14:07:41 snippets-plugin -> function Snippet.findLocation(self, loc) loc =  = userdata: 0xc000855950
+2022/03/29 14:07:41 snippets-plugin -> function Accept()
+2022/03/29 14:07:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008559b0
+2022/03/29 14:07:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000855e30
+2022/03/29 14:07:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000855e90
+2022/03/29 14:07:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000855ef0
+2022/03/29 14:07:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008620f0
+2022/03/29 14:07:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008626c0
+2022/03/29 14:07:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000862c90
+2022/03/29 14:07:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000863260
+2022/03/29 14:07:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000863830
+2022/03/29 14:07:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000863e00
+2022/03/29 14:07:47 snippets-plugin -> function Insert(snippetName) = nil
+2022/03/29 14:07:47 snippets-plugin -> function CursorWord(bp) = userdata: 0xc000399620
+2022/03/29 14:07:47 snippets-plugin -> function EnsureSnippets()
+2022/03/29 14:07:47 snippets-plugin -> function Snippet.clone(self)
+2022/03/29 14:07:47 snippets-plugin -> function Snippet.new()
+2022/03/29 14:07:47 snippets-plugin -> function Snippet.AddCodeLine(self, line) line =  = # plugins bash moderen
+. lib/moduler.sh
+# depencies
+Bash.import: text_display/colorama text_display/IO.ECHO
+Bash.import: util/io.class util/IO.FUNC
+Bash.import: util/operator util/IO.SYSTEM.var
+2022/03/29 14:07:47 snippets-plugin -> function Snippet.Prepare(self)
+2022/03/29 14:07:47 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399a70
+2022/03/29 14:07:47 snippets-plugin -> function Snippet.insert(self)
+2022/03/29 14:07:47 snippets-plugin -> function Snippet.str(self)
+2022/03/29 14:07:47 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399b90
+2022/03/29 14:07:47 snippets-plugin -> function Snippet.str(self)
+2022/03/29 14:07:48 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088c330
+2022/03/29 14:07:48 snippets-plugin -> function Snippet.findLocation(self, loc) loc =  = userdata: 0xc00088c540
+2022/03/29 14:07:48 snippets-plugin -> function Snippet.findLocation(self, loc) loc =  = userdata: 0xc00088c5d0
+2022/03/29 14:07:48 snippets-plugin -> function Accept()
+2022/03/29 14:07:48 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088c630
+2022/03/29 14:07:52 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088cab0
+2022/03/29 14:07:52 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088cb10
+2022/03/29 14:07:52 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088cb70
+2022/03/29 14:08:19 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260d80
+2022/03/29 14:08:20 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000261aa0
+2022/03/29 14:08:20 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00072bec0
+2022/03/29 14:08:20 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000330d20
+2022/03/29 14:08:21 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b3050
+2022/03/29 14:08:21 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000384330
+2022/03/29 14:08:21 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000384900
+2022/03/29 14:08:22 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b3650
+2022/03/29 14:08:22 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b3c20
+2022/03/29 14:08:22 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000398b10
+2022/03/29 14:08:23 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0003990e0
+2022/03/29 14:08:23 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0003996b0
+2022/03/29 14:08:23 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399ce0
+2022/03/29 14:08:23 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0003853e0
+2022/03/29 14:08:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620780
+2022/03/29 14:08:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620e10
+2022/03/29 14:08:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621500
+2022/03/29 14:08:26 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000772270
+2022/03/29 14:08:26 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007722d0
+2022/03/29 14:08:28 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000772480
+2022/03/29 14:08:29 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000772b10
+2022/03/29 14:08:29 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007730e0
+2022/03/29 14:08:30 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007736b0
+2022/03/29 14:08:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773c80
+2022/03/29 14:08:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b2390
+2022/03/29 14:08:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b29c0
+2022/03/29 14:08:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621b90
+2022/03/29 14:08:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea1e0
+2022/03/29 14:08:34 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea7b0
+2022/03/29 14:08:34 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b3050
+2022/03/29 14:08:36 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b3680
+2022/03/29 14:08:38 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008548a0
+2022/03/29 14:08:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008549f0
+2022/03/29 14:08:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000855b30
+2022/03/29 14:08:42 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000862720
+2022/03/29 14:08:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000862b40
+2022/03/29 14:08:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000862ba0
+2022/03/29 14:08:46 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000863650
+2022/03/29 14:08:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000863a70
+2022/03/29 14:08:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000863ad0
+2022/03/29 14:08:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000863c80
+2022/03/29 14:08:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088c390
+2022/03/29 14:08:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ac8630
+2022/03/29 14:08:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ac8690
+2022/03/29 14:08:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088c4e0
+2022/03/29 14:08:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088cb40
+2022/03/29 14:08:59 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ac8ae0
+2022/03/29 14:08:59 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ac8b40
+2022/03/29 14:08:59 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ac8ba0
+2022/03/29 14:08:59 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ac8cc0
+2022/03/29 14:09:00 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ac8f00
+2022/03/29 14:09:01 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ac9dd0
+2022/03/29 14:09:03 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ac9f20
+2022/03/29 14:09:03 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007885a0
+2022/03/29 14:09:05 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088cd20
+2022/03/29 14:09:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007886f0
+2022/03/29 14:09:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000788cc0
+2022/03/29 14:09:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088d2f0
+2022/03/29 14:09:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000789e90
+2022/03/29 14:09:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00079c090
+2022/03/29 14:09:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00079c6f0
+2022/03/29 14:09:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00079cab0
+2022/03/29 14:09:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00079d290
+2022/03/29 14:09:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088db00
+2022/03/29 14:09:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2240
+2022/03/29 14:09:15 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2c90
+2022/03/29 14:09:18 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2ff0
+2022/03/29 14:09:20 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a35c0
+2022/03/29 14:09:20 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a3c20
+2022/03/29 14:09:21 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a3d70
+2022/03/29 14:09:21 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ba360
+2022/03/29 14:09:22 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ba930
+2022/03/29 14:09:22 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007baf00
+2022/03/29 14:09:22 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007bb4d0
+2022/03/29 14:09:23 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00079d4d0
+2022/03/29 14:09:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00079daa0
+2022/03/29 14:09:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ca090
+2022/03/29 14:09:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ca660
+2022/03/29 14:09:25 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007bbaa0
+2022/03/29 14:09:25 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007d0090
+2022/03/29 14:09:26 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007d0660
+2022/03/29 14:09:27 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007d0c90
+2022/03/29 14:09:27 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007d1260
+2022/03/29 14:09:28 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007cb620
+2022/03/29 14:09:29 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007d1830
+2022/03/29 14:09:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007d1ec0
+2022/03/29 14:09:32 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f6780
+2022/03/29 14:09:32 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f67e0
+2022/03/29 14:09:34 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f6990
+2022/03/29 14:09:34 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f70b0
+2022/03/29 14:09:35 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f75f0
+2022/03/29 14:09:35 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f7c50
+2022/03/29 14:09:36 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f7dd0
+2022/03/29 14:09:36 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000870450
+2022/03/29 14:12:37 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000863e00
+2022/03/29 14:12:37 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000863e60
+2022/03/29 14:12:38 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007eab70
+2022/03/29 14:12:39 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000803ef0
+2022/03/29 14:12:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008549c0
+2022/03/29 14:12:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000855a70
+2022/03/29 14:12:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000862120
+2022/03/29 14:12:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008626f0
+2022/03/29 14:12:46 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000862cc0
+2022/03/29 14:12:47 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088c090
+2022/03/29 14:12:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000863350
+2022/03/29 14:12:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000863920
+2022/03/29 14:12:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000863fb0
+2022/03/29 14:12:52 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ac8120
+2022/03/29 14:12:53 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ac86f0
+2022/03/29 14:12:53 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ac8cf0
+2022/03/29 14:12:54 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ac92c0
+2022/03/29 14:12:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ac9890
+2022/03/29 14:12:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088c660
+2022/03/29 14:12:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088cc60
+2022/03/29 14:12:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ac9e60
+2022/03/29 14:12:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007eade0
+2022/03/29 14:12:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b21b0
+2022/03/29 14:12:59 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b2840
+2022/03/29 14:12:59 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b2e70
+2022/03/29 14:12:59 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b3500
+2022/03/29 14:13:01 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088dc50
+2022/03/29 14:13:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088de60
+2022/03/29 14:13:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000772810
+2022/03/29 14:13:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007728d0
+2022/03/29 14:13:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000772a80
+2022/03/29 14:13:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773110
+2022/03/29 14:14:05 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620570
+2022/03/29 14:14:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620c60
+2022/03/29 14:14:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006212f0
+2022/03/29 14:14:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621980
+2022/03/29 14:14:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007737a0
+2022/03/29 14:14:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0005b83c0
+2022/03/29 14:14:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000398900
+2022/03/29 14:14:22 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399d40
+2022/03/29 14:14:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00064c2a0
+2022/03/29 14:14:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b33e0
+2022/03/29 14:14:28 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b3530
+2022/03/29 14:14:28 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b3b00
+2022/03/29 14:14:29 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000074870
+2022/03/29 14:14:29 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260360
+2022/03/29 14:14:29 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260990
+2022/03/29 14:14:30 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0002610b0
+2022/03/29 14:14:30 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a21e0
+2022/03/29 14:14:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000330cf0
+2022/03/29 14:14:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f6180
+2022/03/29 14:14:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f6750
+2022/03/29 14:14:32 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f6d50
+2022/03/29 14:14:32 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f7320
+2022/03/29 14:14:32 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f78f0
+2022/03/29 14:14:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f7ec0
+2022/03/29 14:14:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008704e0
+2022/03/29 14:14:47 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2fc0
+2022/03/29 14:14:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea360
+2022/03/29 14:14:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea3c0
+2022/03/29 14:14:51 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea570
+2022/03/29 14:14:51 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007eac90
+2022/03/29 14:14:53 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ac8360
+2022/03/29 14:14:53 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ac89c0
+2022/03/29 14:14:53 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ac8b40
+2022/03/29 14:14:53 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ac91d0
+2022/03/29 14:14:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ac9320
+2022/03/29 14:14:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ac98f0
+2022/03/29 14:14:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088c900
+2022/03/29 14:14:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088d470
+2022/03/29 14:15:00 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088d5c0
+2022/03/29 14:15:00 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088db90
+2022/03/29 14:15:01 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008621b0
+2022/03/29 14:15:01 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000862780
+2022/03/29 14:15:05 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000862e10
+2022/03/29 14:15:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008633e0
+2022/03/29 14:15:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000863a40
+2022/03/29 14:15:08 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000863b90
+2022/03/29 14:15:08 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008546c0
+2022/03/29 14:15:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007eade0
+2022/03/29 14:15:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000803620
+2022/03/29 14:15:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b25d0
+2022/03/29 14:15:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b2c00
+2022/03/29 14:15:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b32f0
+2022/03/29 14:15:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b3920
+2022/03/29 14:15:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b3f50
+2022/03/29 14:15:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007725d0
+2022/03/29 14:15:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000772c90
+2022/03/29 14:15:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000855200
+2022/03/29 14:15:15 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000855e60
+2022/03/29 14:15:25 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620690
+2022/03/29 14:15:26 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620d20
+2022/03/29 14:15:26 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006213b0
+2022/03/29 14:15:27 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621aa0
+2022/03/29 14:15:27 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0005b8f30
+2022/03/29 14:15:28 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399500
+2022/03/29 14:15:29 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000384300
+2022/03/29 14:15:29 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000384ed0
+2022/03/29 14:15:29 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773c80
+2022/03/29 14:15:30 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0003317d0
+2022/03/29 14:15:59 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006ce270
+2022/03/29 14:15:59 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000377b30
+2022/03/29 14:16:00 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b3500
+2022/03/29 14:16:01 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b3ad0
+2022/03/29 14:16:01 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0000747b0
+2022/03/29 14:16:01 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260330
+2022/03/29 14:16:02 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260960
+2022/03/29 14:16:02 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000261050
+2022/03/29 14:16:02 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f61b0
+2022/03/29 14:16:03 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f6780
+2022/03/29 14:16:03 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2090
+2022/03/29 14:16:04 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2660
+2022/03/29 14:16:04 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2c30
+2022/03/29 14:16:05 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a3290
+2022/03/29 14:16:05 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f6d80
+2022/03/29 14:16:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f76e0
+2022/03/29 14:16:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f7740
+2022/03/29 14:16:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f78f0
+2022/03/29 14:16:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f7f50
+2022/03/29 14:16:13 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007400c0
+2022/03/29 14:16:13 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000740690
+2022/03/29 14:16:13 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000740c60
+2022/03/29 14:16:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000741230
+2022/03/29 14:16:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000741800
+2022/03/29 14:16:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000741dd0
+2022/03/29 14:16:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007823c0
+2022/03/29 14:16:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a38c0
+2022/03/29 14:16:16 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a3f50
+2022/03/29 14:16:18 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000788540
+2022/03/29 14:16:18 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000788ba0
+2022/03/29 14:16:19 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000782990
+2022/03/29 14:16:20 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000782f60
+2022/03/29 14:16:20 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000783530
+2022/03/29 14:16:20 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000783b00
+2022/03/29 14:16:25 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000788cf0
+2022/03/29 14:16:25 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000789350
+2022/03/29 14:16:26 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000789710
+2022/03/29 14:16:26 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000789ef0
+2022/03/29 14:16:27 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00079e090
+2022/03/29 14:16:27 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00079e7b0
+2022/03/29 14:16:28 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00079f2c0
+2022/03/29 14:16:29 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00079f6e0
+2022/03/29 14:16:29 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00079f740
+2022/03/29 14:16:30 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00079fbc0
+2022/03/29 14:16:30 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00079fc20
+2022/03/29 14:16:30 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00079fc80
+2022/03/29 14:16:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00079fe60
+2022/03/29 14:16:32 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b4450
+2022/03/29 14:16:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000792270
+2022/03/29 14:16:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000792840
+2022/03/29 14:16:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000792e10
+2022/03/29 14:16:35 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007933e0
+2022/03/29 14:16:35 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000793a40
+2022/03/29 14:16:36 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b4a20
+2022/03/29 14:16:37 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b4ff0
+2022/03/29 14:16:37 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b55c0
+2022/03/29 14:16:37 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b5b90
+2022/03/29 14:16:37 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007c8180
+2022/03/29 14:17:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260ba0
+2022/03/29 14:17:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260c00
+2022/03/29 14:17:39 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f69f0
+2022/03/29 14:17:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f6f90
+2022/03/29 14:17:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007f7530
+2022/03/29 14:17:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006ce900
+2022/03/29 14:17:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000384210
+2022/03/29 14:17:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000384330
+2022/03/29 14:17:42 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0003848d0
+2022/03/29 14:17:43 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000384f00
+2022/03/29 14:17:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000398db0
+2022/03/29 14:17:48 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399740
+2022/03/29 14:17:48 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b3620
+2022/03/29 14:17:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399d10
+2022/03/29 14:17:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0005b9f50
+2022/03/29 14:17:52 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620db0
+2022/03/29 14:17:52 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621950
+2022/03/29 14:17:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621fb0
+2022/03/29 14:18:36 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620780
+2022/03/29 14:18:39 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620960
+2022/03/29 14:18:39 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620fc0
+2022/03/29 14:18:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621620
+2022/03/29 14:18:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0005b8300
+2022/03/29 14:18:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0005b8e10
+2022/03/29 14:18:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000384300
+2022/03/29 14:18:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000385c50
+2022/03/29 14:18:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006ce270
+2022/03/29 14:18:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260120
+2022/03/29 14:18:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773440
+2022/03/29 14:18:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773ec0
+2022/03/29 14:18:51 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2060
+2022/03/29 14:18:51 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2600
+2022/03/29 14:18:51 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2ba0
+2022/03/29 14:18:51 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a3290
+2022/03/29 14:18:53 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260240
+2022/03/29 14:18:53 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0002607e0
+2022/03/29 14:18:54 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088ca50
+2022/03/29 14:18:54 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088d470
+2022/03/29 14:18:54 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088d590
+2022/03/29 14:18:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00088db30
+2022/03/29 14:18:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008272c0
+2022/03/29 14:18:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea570
+2022/03/29 14:18:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007eab10
+2022/03/29 14:18:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007eb260
+2022/03/29 14:19:39 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a3500
+2022/03/29 14:19:39 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a3b30
+2022/03/29 14:20:28 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399d70
+2022/03/29 14:20:30 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006ce810
+2022/03/29 14:20:30 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000695470
+2022/03/29 14:20:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773440
+2022/03/29 14:20:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773f20
+2022/03/29 14:20:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008555c0
+2022/03/29 14:20:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b2720
+2022/03/29 14:20:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b3200
+2022/03/29 14:20:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b3ce0
+2022/03/29 14:20:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea660
+2022/03/29 14:20:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007eb230
+2022/03/29 14:20:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0002608a0
+2022/03/29 14:20:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0002612f0
+2022/03/29 14:20:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b6e420
+2022/03/29 14:20:59 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b6ee40
+2022/03/29 14:20:59 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b6ef60
+2022/03/29 14:21:00 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b6f500
+2022/03/29 14:21:00 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b6faa0
+2022/03/29 14:21:00 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b7e060
+2022/03/29 14:21:01 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b7e600
+2022/03/29 14:21:02 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b7eba0
+2022/03/29 14:21:02 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621620
+2022/03/29 14:21:03 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b840f0
+2022/03/29 14:21:03 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b84690
+2022/03/29 14:21:03 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b84c30
+2022/03/29 14:21:05 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b85ad0
+2022/03/29 14:21:05 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b7fa40
+2022/03/29 14:21:05 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ba2480
+2022/03/29 14:21:05 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ba2ea0
+2022/03/29 14:21:05 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ba8510
+2022/03/29 14:21:05 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ba8f30
+2022/03/29 14:21:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ba9950
+2022/03/29 14:21:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bb2390
+2022/03/29 14:21:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bb2db0
+2022/03/29 14:21:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bb37d0
+2022/03/29 14:21:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bb38f0
+2022/03/29 14:21:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bb3e90
+2022/03/29 14:21:08 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bc6450
+2022/03/29 14:21:08 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bc69f0
+2022/03/29 14:21:08 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bc6f90
+2022/03/29 14:21:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bc7530
+2022/03/29 14:21:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bc7ad0
+2022/03/29 14:21:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bd4090
+2022/03/29 14:21:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bd4630
+2022/03/29 14:21:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bd4bd0
+2022/03/29 14:21:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bd5170
+2022/03/29 14:21:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bd5710
+2022/03/29 14:21:13 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bd5cb0
+2022/03/29 14:21:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000be4270
+2022/03/29 14:21:15 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000be4810
+2022/03/29 14:21:15 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000be4db0
+2022/03/29 14:21:18 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000be4ed0
+2022/03/29 14:21:19 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000be5470
+2022/03/29 14:21:19 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000be5a10
+2022/03/29 14:21:19 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000be5fb0
+2022/03/29 14:21:20 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bfc570
+2022/03/29 14:21:21 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bfcb10
+2022/03/29 14:21:21 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bfd0b0
+2022/03/29 14:21:22 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bfd650
+2022/03/29 14:21:22 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bfdbf0
+2022/03/29 14:21:23 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c0e1b0
+2022/03/29 14:21:23 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ba2fc0
+2022/03/29 14:21:29 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ba3560
+2022/03/29 14:21:29 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ba3c80
+2022/03/29 14:21:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ba3da0
+2022/03/29 14:21:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c24360
+2022/03/29 14:21:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c24a20
+2022/03/29 14:21:35 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c24b40
+2022/03/29 14:21:36 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c250e0
+2022/03/29 14:21:36 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c25680
+2022/03/29 14:21:36 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c25c20
+2022/03/29 14:21:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2b10
+2022/03/29 14:21:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2b70
+2022/03/29 14:21:46 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2cf0
+2022/03/29 14:21:47 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a3470
+2022/03/29 14:21:48 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b2c00
+2022/03/29 14:21:48 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ba21e0
+2022/03/29 14:21:48 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ba2780
+2022/03/29 14:21:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ba2d20
+2022/03/29 14:21:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ba32c0
+2022/03/29 14:21:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ba3860
+2022/03/29 14:21:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ba3e30
+2022/03/29 14:21:51 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0002603f0
+2022/03/29 14:21:51 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260990
+2022/03/29 14:21:52 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260f60
+2022/03/29 14:21:52 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0002615c0
+2022/03/29 14:21:53 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0002616e0
+2022/03/29 14:21:54 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea390
+2022/03/29 14:21:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea930
+2022/03/29 14:21:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007eaed0
+2022/03/29 14:21:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000802de0
+2022/03/29 14:22:23 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399380
+2022/03/29 14:22:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0005b8f00
+2022/03/29 14:22:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006208d0
+2022/03/29 14:22:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621410
+2022/03/29 14:22:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621fb0
+2022/03/29 14:22:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000772b40
+2022/03/29 14:22:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000826690
+2022/03/29 14:22:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea900
+2022/03/29 14:22:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260120
+2022/03/29 14:22:25 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260b70
+2022/03/29 14:22:25 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000261590
+2022/03/29 14:22:26 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a26c0
+2022/03/29 14:22:26 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a30e0
+2022/03/29 14:22:26 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008548d0
+2022/03/29 14:22:26 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b31a0
+2022/03/29 14:22:26 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b2030
+2022/03/29 14:22:26 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b2b10
+2022/03/29 14:22:27 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b3650
+2022/03/29 14:22:27 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000be4150
+2022/03/29 14:22:30 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000be4300
+2022/03/29 14:22:34 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000be48a0
+2022/03/29 14:22:35 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000be4e70
+2022/03/29 14:22:36 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000be5410
+2022/03/29 14:22:43 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008883c0
+2022/03/29 14:22:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000888ed0
+2022/03/29 14:22:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008899e0
+2022/03/29 14:22:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008aa510
+2022/03/29 14:22:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008ab020
+2022/03/29 14:22:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008abb30
+2022/03/29 14:22:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008b4660
+2022/03/29 14:22:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008b5170
+2022/03/29 14:22:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008b5c80
+2022/03/29 14:22:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008be7b0
+2022/03/29 14:22:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008bf2c0
+2022/03/29 14:22:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008bfdd0
+2022/03/29 14:22:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008cc900
+2022/03/29 14:22:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008cd410
+2022/03/29 14:22:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008cdf20
+2022/03/29 14:22:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008daa50
+2022/03/29 14:22:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008db560
+2022/03/29 14:22:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008ee090
+2022/03/29 14:22:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773650
+2022/03/29 14:22:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008f2240
+2022/03/29 14:22:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008f2d50
+2022/03/29 14:22:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008f3860
+2022/03/29 14:22:46 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008fe390
+2022/03/29 14:22:46 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008feea0
+2022/03/29 14:22:46 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008ff6b0
+2022/03/29 14:22:46 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008ffa10
+2022/03/29 14:22:48 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008ffb60
+2022/03/29 14:22:48 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009081e0
+2022/03/29 14:22:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000908300
+2022/03/29 14:22:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009088a0
+2022/03/29 14:22:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000908e40
+2022/03/29 14:22:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009093e0
+2022/03/29 14:22:53 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000909980
+2022/03/29 14:22:54 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008ee1b0
+2022/03/29 14:23:00 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b3ad0
+2022/03/29 14:23:00 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000854510
+2022/03/29 14:23:01 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000854cc0
+2022/03/29 14:23:01 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000855d40
+2022/03/29 14:23:01 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000dd1d10
+2022/03/29 14:23:02 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0002602d0
+2022/03/29 14:23:03 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260870
+2022/03/29 14:23:05 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260e40
+2022/03/29 14:23:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0002613e0
+2022/03/29 14:23:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea090
+2022/03/29 14:23:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea630
+2022/03/29 14:23:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007eabd0
+2022/03/29 14:23:42 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000dd0a50
+2022/03/29 14:23:43 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000dd0b70
+2022/03/29 14:23:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000dd1a40
+2022/03/29 14:23:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000dd1b60
+2022/03/29 14:23:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000772300
+2022/03/29 14:23:59 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000772de0
+2022/03/29 14:24:00 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773c80
+2022/03/29 14:24:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000772210
+2022/03/29 14:24:52 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399410
+2022/03/29 14:25:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000854690
+2022/03/29 14:25:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00081a6c0
+2022/03/29 14:25:46 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00080fce0
+2022/03/29 14:26:19 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007727e0
+2022/03/29 14:26:19 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773800
+2022/03/29 14:26:22 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0003308d0
+2022/03/29 14:26:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000384ba0
+2022/03/29 14:26:27 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000384cc0
+2022/03/29 14:26:28 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000330a80
+2022/03/29 14:27:25 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b3b90
+2022/03/29 14:27:27 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea7b0
+2022/03/29 14:27:28 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b3aa0
+2022/03/29 14:27:36 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea8d0
+2022/03/29 14:27:36 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007eb0e0
+2022/03/29 14:27:37 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000855a70
+2022/03/29 14:27:38 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007eb3b0
+2022/03/29 14:27:39 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620360
+2022/03/29 14:27:42 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000384330
+2022/03/29 14:27:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620a20
+2022/03/29 14:27:46 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621110
+2022/03/29 14:27:46 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006218f0
+2022/03/29 14:27:48 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000330cf0
+2022/03/29 14:27:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000330ff0
+2022/03/29 14:28:20 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ca55f0
+2022/03/29 14:28:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ca49f0
+2022/03/29 14:28:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000330cc0
+2022/03/29 14:28:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000362d20
+2022/03/29 14:28:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260990
+2022/03/29 14:28:46 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ca5410
+2022/03/29 14:28:46 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ca5e60
+2022/03/29 14:28:46 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007729c0
+2022/03/29 14:28:46 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007733e0
+2022/03/29 14:28:46 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773e60
+2022/03/29 14:28:47 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000261470
+2022/03/29 14:28:48 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000398000
+2022/03/29 14:28:48 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000398ea0
+2022/03/29 14:28:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0002616b0
+2022/03/29 14:28:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620720
+2022/03/29 14:28:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399440
+2022/03/29 14:28:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0003999e0
+2022/03/29 14:28:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620d80
+2022/03/29 14:28:51 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006213e0
+2022/03/29 14:28:51 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621aa0
+2022/03/29 14:28:52 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a20c0
+2022/03/29 14:28:52 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2a80
+2022/03/29 14:28:52 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a3050
+2022/03/29 14:28:53 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399f80
+2022/03/29 14:28:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008547b0
+2022/03/29 14:28:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea750
+2022/03/29 14:28:59 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000855200
+2022/03/29 14:29:00 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000855e00
+2022/03/29 14:29:00 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b24e0
+2022/03/29 14:29:02 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea870
+2022/03/29 14:29:03 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007eae10
+2022/03/29 14:29:03 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b30e0
+2022/03/29 14:29:03 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b3680
+2022/03/29 14:29:05 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b3c20
+2022/03/29 14:29:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000384360
+2022/03/29 14:29:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000384900
+2022/03/29 14:29:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000384f00
+2022/03/29 14:29:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00063a030
+2022/03/29 14:29:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b2660
+2022/03/29 14:29:13 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b2f90
+2022/03/29 14:29:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2540
+2022/03/29 14:29:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620450
+2022/03/29 14:29:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620ab0
+2022/03/29 14:29:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621110
+2022/03/29 14:29:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006217d0
+2022/03/29 14:29:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621e30
+2022/03/29 14:29:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000398cf0
+2022/03/29 14:29:42 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399290
+2022/03/29 14:29:42 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399920
+2022/03/29 14:29:43 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399a40
+2022/03/29 14:29:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000772000
+2022/03/29 14:29:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000772600
+2022/03/29 14:29:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000772c60
+2022/03/29 14:29:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773200
+2022/03/29 14:30:25 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00006c9f0
+2022/03/29 14:30:28 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260810
+2022/03/29 14:30:30 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260930
+2022/03/29 14:30:32 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000261230
+2022/03/29 14:30:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0002617d0
+2022/03/29 14:30:37 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007731d0
+2022/03/29 14:30:37 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773c20
+2022/03/29 14:31:01 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0003994a0
+2022/03/29 14:31:01 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399ef0
+2022/03/29 14:31:02 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620c30
+2022/03/29 14:31:02 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006217d0
+2022/03/29 14:31:02 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2840
+2022/03/29 14:31:08 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006218f0
+2022/03/29 14:31:08 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621f50
+2022/03/29 14:31:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b2570
+2022/03/29 14:31:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b2b70
+2022/03/29 14:31:13 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2960
+2022/03/29 14:31:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a3cb0
+2022/03/29 14:31:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000772990
+2022/03/29 14:31:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007734a0
+2022/03/29 14:31:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260090
+2022/03/29 14:31:46 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0002601b0
+2022/03/29 14:31:47 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260750
+2022/03/29 14:31:48 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260d20
+2022/03/29 14:31:48 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000261290
+2022/03/29 14:31:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0002613b0
+2022/03/29 14:31:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0004440f0
+2022/03/29 14:31:54 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00072bec0
+2022/03/29 14:31:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000802de0
+2022/03/29 14:31:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00080fce0
+2022/03/29 14:32:38 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b3110
+2022/03/29 14:32:38 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b3d10
+2022/03/29 14:32:38 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b36e0
+2022/03/29 14:32:39 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea120
+2022/03/29 14:32:39 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007eab40
+2022/03/29 14:32:39 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000384c90
+2022/03/29 14:32:39 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0005b9f50
+2022/03/29 14:32:39 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000331980
+2022/03/29 14:32:39 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260090
+2022/03/29 14:32:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260ae0
+2022/03/29 14:32:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007723c0
+2022/03/29 14:32:42 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007724e0
+2022/03/29 14:32:42 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000772bd0
+2022/03/29 14:32:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000772cf0
+2022/03/29 14:32:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773290
+2022/03/29 14:32:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773830
+2022/03/29 14:32:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773e30
+2022/03/29 14:32:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000398d50
+2022/03/29 14:32:46 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0003992f0
+2022/03/29 14:32:46 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0003999e0
+2022/03/29 14:32:47 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399b00
+2022/03/29 14:32:48 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260c00
+2022/03/29 14:32:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0002611a0
+2022/03/29 14:32:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006201e0
+2022/03/29 14:32:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000261740
+2022/03/29 14:32:51 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620990
+2022/03/29 14:32:53 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620ff0
+2022/03/29 14:32:53 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621650
+2022/03/29 14:32:54 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621ce0
+2022/03/29 14:32:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008548a0
+2022/03/29 14:32:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a23f0
+2022/03/29 14:32:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2990
+2022/03/29 14:32:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2f30
+2022/03/29 14:32:59 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a3c80
+2022/03/29 14:32:59 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000efa4e0
+2022/03/29 14:33:00 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000855da0
+2022/03/29 14:33:02 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00067a3c0
+2022/03/29 14:33:03 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00067a960
+2022/03/29 14:33:05 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00067af00
+2022/03/29 14:33:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00067b7d0
+2022/03/29 14:33:08 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00067bd70
+2022/03/29 14:33:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000682660
+2022/03/29 14:33:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000682c00
+2022/03/29 14:33:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008547e0
+2022/03/29 14:33:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000855cb0
+2022/03/29 14:33:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2270
+2022/03/29 14:33:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2810
+2022/03/29 14:33:42 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2db0
+2022/03/29 14:33:43 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620180
+2022/03/29 14:34:08 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b3980
+2022/03/29 14:34:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea3c0
+2022/03/29 14:34:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000330a80
+2022/03/29 14:34:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00025a030
+2022/03/29 14:34:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007eae70
+2022/03/29 14:34:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260840
+2022/03/29 14:34:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007727b0
+2022/03/29 14:34:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773230
+2022/03/29 14:34:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773c50
+2022/03/29 14:34:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0003990b0
+2022/03/29 14:34:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000261290
+2022/03/29 14:34:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399ad0
+2022/03/29 14:34:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620630
+2022/03/29 14:34:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621200
+2022/03/29 14:34:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621da0
+2022/03/29 14:34:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008555c0
+2022/03/29 14:34:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a22d0
+2022/03/29 14:34:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000384690
+2022/03/29 14:34:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b2150
+2022/03/29 14:34:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a26c0
+2022/03/29 14:34:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2720
+2022/03/29 14:34:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2b70
+2022/03/29 14:34:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2bd0
+2022/03/29 14:34:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2c30
+2022/03/29 14:34:48 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2de0
+2022/03/29 14:34:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b2270
+2022/03/29 14:34:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a3fb0
+2022/03/29 14:34:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b28d0
+2022/03/29 14:34:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b2ed0
+2022/03/29 14:34:52 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00052ce70
+2022/03/29 14:34:52 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00052cf90
+2022/03/29 14:34:53 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b3530
+2022/03/29 14:34:53 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b3b60
+2022/03/29 14:34:53 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00052d530
+2022/03/29 14:34:54 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00052dad0
+2022/03/29 14:34:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000630990
+2022/03/29 14:34:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006313b0
+2022/03/29 14:34:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000631dd0
+2022/03/29 14:34:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00067a810
+2022/03/29 14:34:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00062aa80
+2022/03/29 14:34:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00062b4a0
+2022/03/29 14:34:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00062bec0
+2022/03/29 14:34:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00067b230
+2022/03/29 14:34:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00067bc50
+2022/03/29 14:35:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006a2000
+2022/03/29 14:35:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00067bd70
+2022/03/29 14:35:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006be330
+2022/03/29 14:35:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006be8d0
+2022/03/29 14:35:08 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006bf770
+2022/03/29 14:35:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006fc1b0
+2022/03/29 14:35:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006fcbd0
+2022/03/29 14:35:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006fd5f0
+2022/03/29 14:35:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006fd710
+2022/03/29 14:35:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006fdcb0
+2022/03/29 14:35:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006a25a0
+2022/03/29 14:35:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006a2b40
+2022/03/29 14:35:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006a30e0
+2022/03/29 14:35:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006a3680
+2022/03/29 14:35:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00076e270
+2022/03/29 14:35:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006a3c20
+2022/03/29 14:35:13 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00076e810
+2022/03/29 14:35:13 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00076edb0
+2022/03/29 14:35:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007861e0
+2022/03/29 14:35:15 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00076f350
+2022/03/29 14:35:16 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000786780
+2022/03/29 14:35:16 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000786d20
+2022/03/29 14:35:19 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000786e40
+2022/03/29 14:35:19 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007873e0
+2022/03/29 14:35:20 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000787980
+2022/03/29 14:35:20 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000787f20
+2022/03/29 14:35:20 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a44e0
+2022/03/29 14:35:22 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a4a80
+2022/03/29 14:35:22 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a5020
+2022/03/29 14:35:22 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a55c0
+2022/03/29 14:35:23 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a5b60
+2022/03/29 14:35:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007bc120
+2022/03/29 14:35:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007bc6c0
+2022/03/29 14:35:25 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007bcc60
+2022/03/29 14:35:25 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007bd350
+2022/03/29 14:35:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00076f8f0
+2022/03/29 14:35:51 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007bd470
+2022/03/29 14:35:52 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00076fe90
+2022/03/29 14:35:52 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007e2450
+2022/03/29 14:35:52 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007bda10
+2022/03/29 14:35:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007e29f0
+2022/03/29 14:35:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007e2f90
+2022/03/29 14:35:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00085e060
+2022/03/29 14:36:02 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00085e600
+2022/03/29 14:36:03 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00085ec30
+2022/03/29 14:36:04 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00085f1d0
+2022/03/29 14:36:04 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00085f770
+2022/03/29 14:36:05 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007e3530
+2022/03/29 14:36:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00085fd10
+2022/03/29 14:36:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007e3ad0
+2022/03/29 14:36:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000896090
+2022/03/29 14:36:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008942d0
+2022/03/29 14:36:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2060
+2022/03/29 14:36:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2600
+2022/03/29 14:36:13 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2750
+2022/03/29 14:36:13 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a28d0
+2022/03/29 14:36:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2a20
+2022/03/29 14:36:22 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620210
+2022/03/29 14:36:22 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000398000
+2022/03/29 14:36:22 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399320
+2022/03/29 14:36:23 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399d40
+2022/03/29 14:36:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620390
+2022/03/29 14:36:25 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620a50
+2022/03/29 14:36:25 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006210b0
+2022/03/29 14:36:30 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773680
+2022/03/29 14:36:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0002602d0
+2022/03/29 14:36:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260e10
+2022/03/29 14:36:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000555d10
+2022/03/29 14:36:32 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621ef0
+2022/03/29 14:36:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006ced20
+2022/03/29 14:36:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000331710
+2022/03/29 14:36:34 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000802de0
+2022/03/29 14:36:34 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea270
+2022/03/29 14:36:34 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0005b9ef0
+2022/03/29 14:36:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007869f0
+2022/03/29 14:36:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000787440
+2022/03/29 14:36:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000787e60
+2022/03/29 14:36:42 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b2240
+2022/03/29 14:36:43 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b28a0
+2022/03/29 14:36:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007bc8a0
+2022/03/29 14:36:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007bd2c0
+2022/03/29 14:36:46 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007bdd10
+2022/03/29 14:36:47 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007bde30
+2022/03/29 14:36:47 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008943f0
+2022/03/29 14:36:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b3a70
+2022/03/29 14:36:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008f0510
+2022/03/29 14:36:51 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008f0f30
+2022/03/29 14:36:51 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008f1950
+2022/03/29 14:36:52 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008f1a70
+2022/03/29 14:36:53 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000900030
+2022/03/29 14:36:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000901080
+2022/03/29 14:36:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000901aa0
+2022/03/29 14:36:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00091e4e0
+2022/03/29 14:36:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00091ef00
+2022/03/29 14:36:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000894a80
+2022/03/29 14:36:59 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000895020
+2022/03/29 14:37:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009a8f00
+2022/03/29 14:37:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009a9a10
+2022/03/29 14:37:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009fe540
+2022/03/29 14:37:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009ff050
+2022/03/29 14:37:08 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009ff170
+2022/03/29 14:37:08 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009ff710
+2022/03/29 14:37:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009ffcb0
+2022/03/29 14:37:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00091f920
+2022/03/29 14:37:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00091fec0
+2022/03/29 14:37:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a18480
+2022/03/29 14:37:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a18a20
+2022/03/29 14:37:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a199b0
+2022/03/29 14:37:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a0e270
+2022/03/29 14:37:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a0f3b0
+2022/03/29 14:37:15 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a0fec0
+2022/03/29 14:37:15 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a4e9f0
+2022/03/29 14:37:16 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a4f500
+2022/03/29 14:37:19 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a4f620
+2022/03/29 14:37:19 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a4fbc0
+2022/03/29 14:37:20 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a5e180
+2022/03/29 14:37:20 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a5e720
+2022/03/29 14:37:23 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a5f740
+2022/03/29 14:37:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a7a270
+2022/03/29 14:37:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a7ad80
+2022/03/29 14:37:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a7b890
+2022/03/29 14:37:26 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a7b9b0
+2022/03/29 14:37:27 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a7bf50
+2022/03/29 14:37:27 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a8c510
+2022/03/29 14:37:29 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a8cab0
+2022/03/29 14:37:29 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a8d050
+2022/03/29 14:37:29 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a8d5f0
+2022/03/29 14:37:29 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a8db90
+2022/03/29 14:37:30 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000aa8150
+2022/03/29 14:37:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000aa90e0
+2022/03/29 14:37:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000aa9200
+2022/03/29 14:37:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b1a930
+2022/03/29 14:37:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b1b590
+2022/03/29 14:37:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b1bfb0
+2022/03/29 14:37:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b2e9f0
+2022/03/29 14:37:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b2f410
+2022/03/29 14:37:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b2fe30
+2022/03/29 14:37:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b3e870
+2022/03/29 14:37:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b3f290
+2022/03/29 14:37:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b3fcb0
+2022/03/29 14:37:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b4e6f0
+2022/03/29 14:37:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b4f110
+2022/03/29 14:37:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b563f0
+2022/03/29 14:37:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b56e10
+2022/03/29 14:37:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b57830
+2022/03/29 14:37:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b74270
+2022/03/29 14:37:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b74c90
+2022/03/29 14:37:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b756b0
+2022/03/29 14:37:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b860f0
+2022/03/29 14:37:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b86b10
+2022/03/29 14:37:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b87530
+2022/03/29 14:37:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b87f50
+2022/03/29 14:37:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b9e990
+2022/03/29 14:37:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b9f3b0
+2022/03/29 14:37:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b4fb30
+2022/03/29 14:37:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bba570
+2022/03/29 14:37:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bbaf90
+2022/03/29 14:37:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bbb9b0
+2022/03/29 14:37:42 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b9fdd0
+2022/03/29 14:37:42 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bd4810
+2022/03/29 14:37:42 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bd5230
+2022/03/29 14:37:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bd5590
+2022/03/29 14:37:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bd5d40
+2022/03/29 14:37:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bf24e0
+2022/03/29 14:37:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bf2540
+2022/03/29 14:37:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bf2690
+2022/03/29 14:37:51 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bf2c30
+2022/03/29 14:37:51 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bf33e0
+2022/03/29 14:37:53 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bf3500
+2022/03/29 14:37:53 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bf3bf0
+2022/03/29 14:37:54 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bf3d10
+2022/03/29 14:37:54 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c222d0
+2022/03/29 14:37:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c22870
+2022/03/29 14:37:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c22e10
+2022/03/29 14:37:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c233b0
+2022/03/29 14:37:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c23950
+2022/03/29 14:37:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c23ef0
+2022/03/29 14:37:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c3e4b0
+2022/03/29 14:37:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c3ea50
+2022/03/29 14:38:00 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c3f080
+2022/03/29 14:38:03 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c3f620
+2022/03/29 14:38:03 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c3fd10
+2022/03/29 14:38:05 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c3fe30
+2022/03/29 14:38:05 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c5a3f0
+2022/03/29 14:38:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c5a990
+2022/03/29 14:38:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c5af30
+2022/03/29 14:38:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c5b4d0
+2022/03/29 14:38:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c5ba70
+2022/03/29 14:38:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c70030
+2022/03/29 14:38:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c705d0
+2022/03/29 14:38:08 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bd5e60
+2022/03/29 14:38:08 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b2060
+2022/03/29 14:38:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b26c0
+2022/03/29 14:38:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b2cc0
+2022/03/29 14:38:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b3320
+2022/03/29 14:38:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b3920
+2022/03/29 14:38:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b3f20
+2022/03/29 14:38:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea060
+2022/03/29 14:38:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000384660
+2022/03/29 14:38:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea660
+2022/03/29 14:38:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007eac00
+2022/03/29 14:38:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007eb3e0
+2022/03/29 14:38:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000384c00
+2022/03/29 14:38:13 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000330c60
+2022/03/29 14:38:13 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000694ba0
+2022/03/29 14:38:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260000
+2022/03/29 14:38:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0005b96b0
+2022/03/29 14:38:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000772360
+2022/03/29 14:38:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0002605a0
+2022/03/29 14:38:15 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007729c0
+2022/03/29 14:38:20 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773aa0
+2022/03/29 14:38:21 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000398090
+2022/03/29 14:38:21 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006208a0
+2022/03/29 14:38:21 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006213e0
+2022/03/29 14:38:21 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621f80
+2022/03/29 14:38:21 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008559e0
+2022/03/29 14:38:22 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b33e0
+2022/03/29 14:38:23 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b3500
+2022/03/29 14:38:23 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b3aa0
+2022/03/29 14:38:23 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2060
+2022/03/29 14:38:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2600
+2022/03/29 14:38:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2ba0
+2022/03/29 14:38:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a3290
+2022/03/29 14:38:32 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399890
+2022/03/29 14:38:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bf23c0
+2022/03/29 14:38:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bf2ed0
+2022/03/29 14:38:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bd5080
+2022/03/29 14:38:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c3e000
+2022/03/29 14:38:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c3eb10
+2022/03/29 14:38:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c3f620
+2022/03/29 14:38:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c70180
+2022/03/29 14:38:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bf3a10
+2022/03/29 14:38:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c7e900
+2022/03/29 14:38:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c70cf0
+2022/03/29 14:38:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c7f410
+2022/03/29 14:38:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c7ff20
+2022/03/29 14:38:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000780a50
+2022/03/29 14:38:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000781560
+2022/03/29 14:38:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000788090
+2022/03/29 14:38:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000788ba0
+2022/03/29 14:38:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007896b0
+2022/03/29 14:38:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007901e0
+2022/03/29 14:38:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000790cf0
+2022/03/29 14:38:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000791800
+2022/03/29 14:38:34 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000c71800
+2022/03/29 14:38:34 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a0330
+2022/03/29 14:38:34 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a0e40
+2022/03/29 14:38:34 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a1950
+2022/03/29 14:38:34 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ba480
+2022/03/29 14:38:35 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007baf90
+2022/03/29 14:38:36 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007bb0b0
+2022/03/29 14:38:36 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007bb650
+2022/03/29 14:38:37 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000791920
+2022/03/29 14:38:37 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007bbbf0
+2022/03/29 14:38:37 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007cc1b0
+2022/03/29 14:38:39 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000791ec0
+2022/03/29 14:38:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007cc750
+2022/03/29 14:38:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007cccf0
+2022/03/29 14:38:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007cd290
+2022/03/29 14:38:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007cd830
+2022/03/29 14:38:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007e2480
+2022/03/29 14:38:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007cddd0
+2022/03/29 14:38:42 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000870390
+2022/03/29 14:38:43 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000870930
+2022/03/29 14:38:43 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000870ed0
+2022/03/29 14:38:43 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000871470
+2022/03/29 14:38:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000871a10
+2022/03/29 14:38:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000871fb0
+2022/03/29 14:38:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000884570
+2022/03/29 14:38:46 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000885500
+2022/03/29 14:38:54 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000885b30
+2022/03/29 14:38:54 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008ae0f0
+2022/03/29 14:38:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007e2b40
+2022/03/29 14:38:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008ae690
+2022/03/29 14:38:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008aec30
+2022/03/29 14:38:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008af1d0
+2022/03/29 14:38:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008af770
+2022/03/29 14:38:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008afdd0
+2022/03/29 14:38:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008afef0
+2022/03/29 14:38:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008ce4b0
+2022/03/29 14:38:59 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008cea50
+2022/03/29 14:38:59 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008ceff0
+2022/03/29 14:38:59 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008cf590
+2022/03/29 14:39:05 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007e30e0
+2022/03/29 14:39:05 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007e3680
+2022/03/29 14:39:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007e3c20
+2022/03/29 14:39:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009021e0
+2022/03/29 14:39:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008cfbc0
+2022/03/29 14:39:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00090e180
+2022/03/29 14:39:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00090e720
+2022/03/29 14:39:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00090ee40
+2022/03/29 14:39:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000902b70
+2022/03/29 14:39:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009031d0
+2022/03/29 14:39:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000903320
+2022/03/29 14:39:54 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000854b10
+2022/03/29 14:39:54 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620480
+2022/03/29 14:39:54 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621020
+2022/03/29 14:39:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000855fb0
+2022/03/29 14:39:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0003992f0
+2022/03/29 14:39:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399d10
+2022/03/29 14:39:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621bc0
+2022/03/29 14:39:55 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000772720
+2022/03/29 14:39:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260750
+2022/03/29 14:39:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007732c0
+2022/03/29 14:39:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773d70
+2022/03/29 14:39:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000330b40
+2022/03/29 14:39:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008035f0
+2022/03/29 14:39:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0002611a0
+2022/03/29 14:39:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea210
+2022/03/29 14:39:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007eac90
+2022/03/29 14:39:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000384a80
+2022/03/29 14:39:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b25a0
+2022/03/29 14:39:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b30e0
+2022/03/29 14:39:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b3bc0
+2022/03/29 14:40:01 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000902300
+2022/03/29 14:40:01 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000902360
+2022/03/29 14:40:02 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000884420
+2022/03/29 14:40:02 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000884480
+2022/03/29 14:40:02 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008844e0
+2022/03/29 14:40:03 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000884f90
+2022/03/29 14:40:04 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008859e0
+2022/03/29 14:40:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000902720
+2022/03/29 14:40:08 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000902cf0
+2022/03/29 14:40:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000903290
+2022/03/29 14:40:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000885b00
+2022/03/29 14:40:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bc0270
+2022/03/29 14:40:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bc0810
+2022/03/29 14:40:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bc0db0
+2022/03/29 14:40:13 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bc1350
+2022/03/29 14:40:13 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bc18f0
+2022/03/29 14:40:13 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000903890
+2022/03/29 14:40:14 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000903e30
+2022/03/29 14:40:15 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00090e3f0
+2022/03/29 14:40:16 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00090e990
+2022/03/29 14:40:16 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00090f020
+2022/03/29 14:40:18 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00090f140
+2022/03/29 14:40:18 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00090f6e0
+2022/03/29 14:40:18 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00090fc80
+2022/03/29 14:40:18 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00098a240
+2022/03/29 14:40:18 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00098a7e0
+2022/03/29 14:40:19 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00098ad80
+2022/03/29 14:40:19 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00098b320
+2022/03/29 14:40:21 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00098b8c0
+2022/03/29 14:40:22 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00098be60
+2022/03/29 14:40:22 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00099c540
+2022/03/29 14:40:23 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00099c660
+2022/03/29 14:40:23 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00099cc00
+2022/03/29 14:40:23 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bc1e90
+2022/03/29 14:40:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00099d1a0
+2022/03/29 14:40:26 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009a87b0
+2022/03/29 14:40:26 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009a8810
+2022/03/29 14:40:27 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00099d7d0
+2022/03/29 14:40:28 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009cc690
+2022/03/29 14:40:29 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009a9290
+2022/03/29 14:40:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009a9440
+2022/03/29 14:40:32 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009a99e0
+2022/03/29 14:40:32 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009a9f80
+2022/03/29 14:40:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009fc540
+2022/03/29 14:40:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009fcae0
+2022/03/29 14:40:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009fd080
+2022/03/29 14:40:35 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009fd620
+2022/03/29 14:40:35 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009fdbc0
+2022/03/29 14:40:36 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a0c180
+2022/03/29 14:40:36 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a0c720
+2022/03/29 14:40:37 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a0ccc0
+2022/03/29 14:40:38 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a0d260
+2022/03/29 14:40:38 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a0d800
+2022/03/29 14:40:38 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a0de90
+2022/03/29 14:40:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a0dfb0
+2022/03/29 14:40:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a34570
+2022/03/29 14:40:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a34b10
+2022/03/29 14:40:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a350b0
+2022/03/29 14:40:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a35650
+2022/03/29 14:40:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a35bf0
+2022/03/29 14:40:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a52360
+2022/03/29 14:40:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a52900
+2022/03/29 14:40:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a52ea0
+2022/03/29 14:40:48 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009cc7b0
+2022/03/29 14:40:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009ccd50
+2022/03/29 14:40:51 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009cd2f0
+2022/03/29 14:40:52 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009cd890
+2022/03/29 14:40:54 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009cde30
+2022/03/29 14:40:54 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000aae510
+2022/03/29 14:40:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000aae630
+2022/03/29 14:40:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000aaebd0
+2022/03/29 14:40:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a53740
+2022/03/29 14:41:01 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ae60f0
+2022/03/29 14:41:01 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ae6150
+2022/03/29 14:41:03 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ae6bd0
+2022/03/29 14:41:05 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000aaf170
+2022/03/29 14:41:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000aaf710
+2022/03/29 14:41:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000aafcb0
+2022/03/29 14:41:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b1a270
+2022/03/29 14:41:08 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b1a810
+2022/03/29 14:41:08 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b1adb0
+2022/03/29 14:41:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b1b350
+2022/03/29 14:41:09 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ae6d80
+2022/03/29 14:41:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ae7320
+2022/03/29 14:41:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b1b8f0
+2022/03/29 14:41:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000b1be90
+2022/03/29 14:41:11 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bac450
+2022/03/29 14:41:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bac9f0
+2022/03/29 14:41:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bad050
+2022/03/29 14:41:17 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ae78c0
+2022/03/29 14:41:19 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bc0ab0
+2022/03/29 14:41:19 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bc0bd0
+2022/03/29 14:41:20 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bc1170
+2022/03/29 14:41:20 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bc1710
+2022/03/29 14:41:21 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000abe060
+2022/03/29 14:41:21 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000abe7e0
+2022/03/29 14:41:22 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000abee70
+2022/03/29 14:41:22 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000abf410
+2022/03/29 14:41:23 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bc1cb0
+2022/03/29 14:41:25 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000abfad0
+2022/03/29 14:41:27 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b21b0
+2022/03/29 14:41:29 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000884390
+2022/03/29 14:41:30 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000884960
+2022/03/29 14:41:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000884f00
+2022/03/29 14:41:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0008854a0
+2022/03/29 14:41:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000885b90
+2022/03/29 14:41:34 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000885cb0
+2022/03/29 14:41:34 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0003843f0
+2022/03/29 14:41:37 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000384a20
+2022/03/29 14:41:38 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea060
+2022/03/29 14:41:39 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007ea600
+2022/03/29 14:41:39 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007eaba0
+2022/03/29 14:41:39 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007eb380
+2022/03/29 14:41:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0005b9530
+2022/03/29 14:41:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b2810
+2022/03/29 14:41:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000330960
+2022/03/29 14:41:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000331770
+2022/03/29 14:41:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00064c2a0
+2022/03/29 14:41:43 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b2e10
+2022/03/29 14:41:43 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b3470
+2022/03/29 14:41:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260060
+2022/03/29 14:41:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0002606c0
+2022/03/29 14:41:48 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0002607e0
+2022/03/29 14:41:48 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000260db0
+2022/03/29 14:41:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0002613b0
+2022/03/29 14:41:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000772060
+2022/03/29 14:41:51 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007726c0
+2022/03/29 14:41:54 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007b3a70
+2022/03/29 14:41:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007736b0
+2022/03/29 14:41:59 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620480
+2022/03/29 14:42:02 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000620ea0
+2022/03/29 14:42:02 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621560
+2022/03/29 14:42:02 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000398ae0
+2022/03/29 14:42:07 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000621e60
+2022/03/29 14:42:12 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399bc0
+2022/03/29 14:42:18 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b31a0
+2022/03/29 14:42:18 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b3740
+2022/03/29 14:42:19 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b3ce0
+2022/03/29 14:42:19 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a26c0
+2022/03/29 14:42:20 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399d70
+2022/03/29 14:42:21 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bd4600
+2022/03/29 14:42:25 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bd5c50
+2022/03/29 14:42:26 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a0c6f0
+2022/03/29 14:42:26 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a0d110
+2022/03/29 14:42:27 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a522a0
+2022/03/29 14:42:27 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a523c0
+2022/03/29 14:42:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a0dd70
+2022/03/29 14:42:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ae67e0
+2022/03/29 14:42:32 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ae6900
+2022/03/29 14:42:37 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ae71a0
+2022/03/29 14:42:37 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ae7740
+2022/03/29 14:42:38 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bac2a0
+2022/03/29 14:42:39 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bac840
+2022/03/29 14:42:39 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bace10
+2022/03/29 14:42:40 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bad470
+2022/03/29 14:42:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000920330
+2022/03/29 14:42:41 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000920450
+2022/03/29 14:42:42 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009209f0
+2022/03/29 14:42:42 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000920f90
+2022/03/29 14:42:42 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000921530
+2022/03/29 14:42:42 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000921ad0
+2022/03/29 14:42:43 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00093e090
+2022/03/29 14:42:47 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00093ef30
+2022/03/29 14:42:48 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00093f950
+2022/03/29 14:42:49 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000958390
+2022/03/29 14:42:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009584b0
+2022/03/29 14:42:50 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000958a50
+2022/03/29 14:42:52 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000958ff0
+2022/03/29 14:42:52 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000959590
+2022/03/29 14:42:53 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a52a80
+2022/03/29 14:42:53 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a530e0
+2022/03/29 14:42:56 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a53200
+2022/03/29 14:42:57 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000959b30
+2022/03/29 14:42:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009800f0
+2022/03/29 14:42:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000980690
+2022/03/29 14:42:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000980c30
+2022/03/29 14:42:58 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009811d0
+2022/03/29 14:43:00 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00098e180
+2022/03/29 14:43:00 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a537d0
+2022/03/29 14:43:01 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a53d70
+2022/03/29 14:43:01 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00098e2a0
+2022/03/29 14:43:01 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00098e840
+2022/03/29 14:43:03 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00098ede0
+2022/03/29 14:43:03 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000998330
+2022/03/29 14:43:04 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009988d0
+2022/03/29 14:43:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000998e70
+2022/03/29 14:43:06 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000999530
+2022/03/29 14:43:08 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000999650
+2022/03/29 14:43:08 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000999bf0
+2022/03/29 14:43:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009beba0
+2022/03/29 14:43:10 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0009becc0
+2022/03/29 14:43:17 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc00098fbf0
+2022/03/29 14:43:17 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ae6060
+2022/03/29 14:43:18 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ae6600
+2022/03/29 14:43:18 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a52060
+2022/03/29 14:43:20 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a52f30
+2022/03/29 14:43:24 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000ae75f0
+2022/03/29 14:43:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bd4480
+2022/03/29 14:43:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000a53560
+2022/03/29 14:43:34 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bd4ae0
+2022/03/29 14:43:37 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000bd5230
+2022/03/29 14:43:43 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b3920
+2022/03/29 14:43:43 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000854900
+2022/03/29 14:43:43 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000855e30
+2022/03/29 14:43:44 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a2f00
+2022/03/29 14:43:45 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0007a3020
+2022/03/29 14:43:48 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0006200c0
+2022/03/29 14:44:30 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000399ad0
+2022/03/29 14:44:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000772810
+2022/03/29 14:44:31 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000772f60
+2022/03/29 14:44:33 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773080
+2022/03/29 14:44:34 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc000773620
+2022/03/29 14:44:38 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b36e0
+2022/03/29 14:44:38 snippets-plugin -> function onBeforeTextEvent(ev) = userdata: 0xc0001b3800
