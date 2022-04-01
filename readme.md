@@ -29,5 +29,5 @@ $ make ubuntu
 
 <li><code>make run</code></li>
 
-<li><code><a href="https://www.youtube.com/channel/UCtu-GcxKL8kJBXpR1wfMgWg">subscribe</a> pejuang kentang</code></li>
+<li><code>jangan lupa <a href="https://www.youtube.com/channel/UCtu-GcxKL8kJBXpR1wfMgWg">subscribe</a> pejuang kentang</code></li>
 
