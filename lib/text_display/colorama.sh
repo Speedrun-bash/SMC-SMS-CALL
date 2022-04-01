@@ -59,14 +59,14 @@ default.color(){
 
 shopt -s expand_aliases
 
-alias mode::bg.merah='Tulis.str "\033[1;41m"'
-alias mode::bg.hijau='Tulis.str "\033[1;42m"'
-alias mode::bg.kuning='Tulis.str "\033[1;43m"'
-alias mode::bg.biru='Tulis.str "\033[1;44m"'
-alias mode::bg.pink='Tulis.str "\033[1;45m"'
-alias mode::bg.cyan='Tulis.str "\033[1;46m"'
-alias mode::bg.putih='Tulis.str "\033[1;47m"'
-alias mode::bg.ungu="Tulis.str '\033[1;48;5;99m'"
+alias mode::bg.merah='Tulis.str "\033[0;1;41m"'
+alias mode::bg.hijau='Tulis.str "\033[0;1;42m"'
+alias mode::bg.kuning='Tulis.str "\033[0;1;43m"'
+alias mode::bg.biru='Tulis.str "\033[0;1;44m"'
+alias mode::bg.pink='Tulis.str "\033[0;1;45m"'
+alias mode::bg.cyan='Tulis.str "\033[0;1;46m"'
+alias mode::bg.putih='Tulis.str "\033[0;1;47m"'
+alias mode::bg.ungu="Tulis.str '\033[0;1;48;5;99m'"
 alias mode::Source.bold='Tulis.str "\033[1m"'
 alias mode::Source.invis='Tulis.str "\033[8m"'
 alias mode::Source.dim='Tulis.str "\033[2m"'
