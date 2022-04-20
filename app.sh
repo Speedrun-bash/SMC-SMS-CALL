@@ -1,46 +1,6 @@
 #!/usr/bin/env bash
 
-# note
-<< EOF
-
-semua code di dalam script ini di rancang oleh Bayu Riski A.M
-di larang merubah source ini sebelum ijin kepada author nya
-
-komunitas : t.me/BashShell
-oficial   : t.me/SpeedrunOFC
-
-dan subscribe juga channel youtube saya [pejuang kentang]
-
-# LICENSE
-MIT License
-
-Copyright (c) 2022 Bash programmer
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-EOF
-
-# author  : speedrun
-# github  : https://github.com/Speedrun-bash
-# youtube : pejuang kentang
-
-# jangan lupa subscribe pejuang kentang ya gan ^_^
+# subscribe pejuang kentang
 
 # plugins bash moderen
 . lib/moduler.sh
@@ -48,293 +8,245 @@ EOF
 Bash.import: text_display/colorama text_display/IO.ECHO
 Bash.import: util/io.class util/IO.FUNC
 Bash.import: util/operator util/IO.SYSTEM.var
-Bash.import: fake_useragent/HTTP.UA
+Bash.import: urlib/pyreq
+#------------{ variable base rest api }-------------------#
+var default_headers : "";
+var apis : "https://www.mpl.id/api/applink";
+var methods : "";
+var caller : "https://id.jagreward.com/member/verify-mobile/"
 
+# --------------{ membutuhkan pack.sh }-----------------#
 @require modules/pack.sh
-
-class __main__; {
-	public: app = sms; %% metode sms
-	public: app = wa; %% metode wa
-}; {
-	def: __main__::sms(){
-		global: no = "$@"
-		global: ua = $(Bash::Ua.Random)
-		
-		declare heders=(
-			"host: api.tokko.io"
-			"content-type: application/json"
-			"origin: https://web.lummoshop.com"
-			"referer: https://web.lummoshop.com/"
-			"sec-fetch-site: cross-site"
-			"user-agent: ${ua}"
-			"x-tokko-api-client: merchant_web"
-			"x-tokko-api-client-version: 4.1.1"
-		); var req : $(curl -sL -H "${heders[0]}" -H "${heders[1]}" -H "${heders[2]}" -H "${heders[3]}" -H "${heders[4]}" -H "${heders[5]}" -H "${heders[6]}" -H "${heders[7]}" --url "https://api.tokko.io/graphql" -X POST -d '{"operationName":"generateOTP","variables":{"generateOtpInput":{"phoneNumber":"'"${no}"'","hashCode":"","channel":"SMS","userType":"MERCHANT"}},"query":"mutation generateOTP($generateOtpInput: GenerateOtpInput!) {\n  generateOtp(generateOtpInput: $generateOtpInput) {\n    phoneNumber\n  }\n}\n"}')
-
-		var waktu : $(date +%H:%M:%S)
-		if ! (ambil: req in "errors" &> /dev/null); then
-			Tulis.strN "${ku}[${pu}${waktu}${ku}]${st} ${bg_cy}Bot info${st}${pu} \tspamming to ${ku}${no} ${ij}V"
-			Tulis.strN "${me}[${pu}${waktu}${me}]${st} ${bg_ij}bot note${st}${me} \tevery 4 times spam will cause a colddown ( which aims to avoid the web so as not to sulk ;V )"
-			Tulis.strN "${cy}[${pu}${waktu}${cy}]${st} ${bg_me}message${st}${pu}  \tsubscribe pejuang kentang${st}\n"
-		else
-			Tulis.strN "${ku}[${pu}${waktu}${ku}]${st} ${bg_cy}Bot info${st}${pu} \tspamming to ${ku}${no} ${me}X${st}"
-		    Tulis.strN "${me}[${pu}${waktu}${me}]${st} ${bg_ij}bot note${st}${me} \tevery 4 times spam will cause a colddown ( which aims to avoid the web so as not to sulk ;V )"
-			Tulis.strN "${cy}[${pu}${waktu}${cy}]${st} ${bg_me}message${st}${pu}  \tsubscribe pejuang kentang${st}\n"
-		fi
+#---------------{ class mekanisme spam }-----------------#
+class main; {
+	public: app = sms;
+	public: app = call;
+} && {
+#---------{ object sms }----------#
+	def: main::sms(){
+		global: nomer = "$@";# nama argument
+		var gelud : $(shuf -i 5-11 -n 1);
+#---------{ body syntax python }---------#
+		var modul : $(cat << EOF
+headers = {
+    'Host': 'global-api.mpl.live',
+    'language': 'in',
+    'user-agent': 'mpl-android/1000153 (RV-153)',
+    'apptype': 'Cash',
+    'countrycode': 'ID',
+    'countrycallingcode': '0',
+    'flavorname': 'production_global_nowtm',
+    'buildtype': 'false',
+    'islogenabled': 'false',
+    'isdevelopmentenabled': 'false',
+    'versionname': '1.0.153_MPL_Production_ID_nowtm',
+    'buildtime': '20211215_11_23',
+    'deviceid': 'a4790cc74c2fefda',
+    'osversioncode': '29',
+    'osversion': '10',
+    'make': 'ROG',
+    'model': 'NEWS-VERSION',
+    'manufacturer': 'ROG',
+    'devicearch': 'armv8l',
+    'apktype': 'INDO_IA_NWTM_MISSIONS',
+    'deviceidnew': 'a4790cc74c2fefda',
+    'countrycodenew': 'ID',
+    'cache-control': 'no-cache',
+    'content-type': 'application/json; charset=utf-8',
+    'content-length': '193',
+    'accept-encoding': 'gzip',
+    };
+    nomor = "$nomer";
+    data = '{"countryCode":62,"mobileNumber":"' + nomor + '","referrerCode":"","signUpOfferCode":"","imei":{"imei1":"","imei2":""},"gameId":1000002,"ivbb":"","userUid":"a0861be9-9c71-44ae-b9a2-6a63b8edba48"}';
+    res = req.post('https://global-api.mpl.live/auth/init/otp', headers=headers, data=data).text;
+EOF
+)
+	var pw : $(echo "$RANDOM"|base64)
+#-----------------------{ base api 2 }-----------------#
+	var ref : $(curl -sL -X POST --ssl -H "user-agent: Mozilla/5.0 (Linux; Android 9; TA-1021) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36" -H "referer: https://www.mpl.id/?mobile=85731184377" -H 'cookie: gcl_au=1.1.173982943.1648991375; _gid=GA1.2.1916794866.1648991376; _fbp=fb.1.1648991376707.690110363; _uetsid=79fac830b35111ec9fba4d813d4ded86; _uetvid=79fb5060b35111eca6ba1909185337e2; _hjSessionUser_1696874=eyJpZCI6IjEzOGQzM2Y0LWQ4YzctNTczNS1hOTc5LTg5MWNjOTM3ODQzYiIsImNyZWF0ZWQiOjE2NDg5OTIzMDY4NTAsImV4aXN0aW5nIjpmYWxzZX0=; _ga=GA1.2.1722677761.1648991376; _ga_Y2HJP5CQFP=GS1.1.1648992307.1.0.1648993230.60; _ga_X3TGQ1DPDD=GS1.1.1648992307.1.0.1648993230.0; RT="z=1&dm=www.mpl.id&si=57fbc1f9-d810-49d7-b898-d9f69d080ea0&ss=l1k9pnm7&sl=0&tt=0"; _gat_UA-136971790-1=1' -H "content-type: application/json" -d '{"To":"'"+62${nomer}"'","VAR1":"DEFAULT"}' --insecure $apis --compressed)
+	var s2 : $(python.req "$modul")
+#----------------------{ validasi content api }---------------#
+	if (ambil: s2 in OK &>/dev/null); then {
+	    Tulis.strN "${ku}[${ij}√${ku}] ${bg_me}BOT INFO${bg_ij} ${st}${hi}   \tServer 1 -> True"
+	    Tulis.strN "${ku}[${ij}√${ku}] ${bg_me}BOT TARGET${bg_ij} ${st}${hi} \t$nomer"
+	    Tulis.strN "${ku}[${ij}√${ku}] ${bg_pu}${hi}BOT TIMES${bg_ij} ${st}${hi}  \t$(date +%H:%M:%S)${st}"
+	}; else {
+			Tulis.strN "${ku}[${me}✗${ku}] ${bg_me}BOT INFO${bg_ij} ${st}${hi}   \tServer 1 -> True"
+            Tulis.strN "${ku}[${me}✗${ku}] ${bg_me}BOT TARGET${bg_ij} ${st}${hi} \t$nomer"
+            Tulis.strN "${ku}[${me}✗${ku}] ${bg_pu}${hi}BOT TIMES${bg_ij} ${st}${hi}  \t$(date +%H:%M:%S)${st}"
+	};
+	 fi
+#------------------{ validasi content api 2 }-------------------#
+	if (ambil: ref in 200 &>/dev/null); then {
+            Tulis.strN "${cy}[${ij}√${cy}] ${bg_me}BOT INFO${bg_cy} ${st}${hi}   \tServer 2 -> True"
+            Tulis.strN "${cy}[${ij}√${cy}] ${bg_me}BOT TARGET${bg_cy} ${st}${hi} \t$nomer"
+            Tulis.strN "${cy}[${ij}√${cy}] ${bg_pu}${hi}BOT TIMES ${bg_cy} ${st}${hi}  \t$(date +%H:%M:%S)${st}"
+        }; else {
+            Tulis.strN "${cy}[${me}✗${cy}] ${bg_me}BOT INFO${bg_cy} ${st}${hi}  \tServer 2 -> False"
+            Tulis.strN "${cy}[${me}✗${cy}] ${bg_me}BOT TARGET${bg_cy} ${st}${hi}\t$nomer"
+            Tulis.strN "${cy}[${me}✗${cy}] ${bg_pu}${hi}BOT TIMES${bg_cy} ${st}${hi} \t$(date +%H:%M:%S)${st}"
+        };
+         fi
 	}
-        def: __main__::wa(){
-                global: no = "$@"
-                global: ua = $(Bash::Ua.Random)
+#------------------{ object call }-------------#
+	def: main::call(){
+	    global: nomer = "$@";# nama argument
+#------------------{ mekanisme https request menggunakan curl }------------------#
+	    var req : $(curl --silent \
+	                    --location \
+	                    --ssl \
+	                    --request GET \
+	                    --insecure ${caller}${nomer}
+	               );
+#------------------{ validasi content }-------------------#
+	   if (ambil: req in Jaringan &> /dev/null); then
+	        Tulis.strN "${bi}[${me}?${bi}] ${bg_me}BOT INFO${bg_cy} ${st}${hi}   \tnull"
+	        Tulis.strN "${bi}[${me}?${bi}] ${bg_me}BOT MSG${bg_cy} ${st}${hi}    \tJaringan anda tidak memadai"
+	        Tulis.strN "${bi}[${me}?${bi}] ${bg_pu}${hi}HTTP RETURN${bg_cy} ${st}${hi}\t0${st}"
+	   elif (ambil: req in melebihi &> /dev/null); then
+	        Tulis.strN "${m}[${me}✗${m}] ${bg_me}BOT INFO${bg_cy} ${st}${hi}   \tFalse"
+	        Tulis.strN "${m}[${me}✗${m}] ${bg_me}BOT TARGET${bg_cy} ${st}${hi} \t$nomer"
+	        Tulis.strN "${m}[${me}✗${m}] ${bg_pu}${hi}BOT MSG${bg_cy} ${st}${hi}    \tColdown${st}"
+	   elif (ambil: req in ANGKA &> /dev/null); then
+	   		Tulis.strN "${cy}[${ij}√${cy}] ${bg_me}BOT INFO${bg_cy} ${st}$hi   \tTrue"
+	   		Tulis.strN "${cy}[${ij}√${cy}] ${bg_me}BOT TARGET${bg_cy} ${st}$hi \t$nomer"
+	   		Tulis.strN "${cy}[${ij}√${cy}] ${bg_pu}${hi}BOT MSG${st}$hi     \tWORK IT$st"
+	   fi
+	}
+#------------------{ mengeksekusi class }-------------#
+}; var GLOBERIGNORE : "*"; class.new: main spam
 
-                declare heders=(
-                        "host: api.tokko.io"
-                        "content-type: application/json"
-                        "origin: https://web.lummoshop.com"
-                        "referer: https://web.lummoshop.com/"
-                        "sec-fetch-site: cross-site"
-                        "user-agent: ${ua}"
-                        "x-tokko-api-client: merchant_web"
-                        "x-tokko-api-client-version: 4.1.1"
-                ); var req : $(curl -sL -H "${heders[0]}" -H "${heders[1]}" -H "${heders[2]}" -H "${heders[3]}" -H "${heders[4]}" -H "${heders[5]}" -H "${heders[6]}" -H "${heders[7]}" --url "https://api.tokko.io/graphql" -X POST -d '{"operationName":"generateOTP","variables":{"generateOtpInput":{"phoneNumber":"'"${no}"'","hashCode":"","channel":"WHATSAPP","userType":"MERCHANT"}},"query":"mutation generateOTP($generateOtpInput: GenerateOtpInput!) {\n  generateOtp(generateOtpInput: $generateOtpInput) {\n    phoneNumber\n  }\n}\n"}')
-				var waktu : $(date +%H:%M:%S);
-				
-                if ! (ambil: req in "errors" &> /dev/null); then
-                        Tulis.strN "${ku}[${pu}${waktu}${ku}]${st} ${bg_cy}bot info${st}${pu} \tspamming to ${ku}${no} ${ij}V"
-                        Tulis.strN "${me}[${pu}${waktu}${me}]$st ${bg_ij}bot note${st}${me} \tevery 2 times spam will cause a colddown ( which aims to avoid the web so as not to sulk ;V )"
-                		Tulis.strN "${cy}[${pu}${waktu}${cy}]$st ${bg_me}message${st}${pu}  \tsubscribe pejuang kentang${st}\n"
-                	elif (ambil: req in "errors" &> /dev/null); then
-                       Tulis.strN "${ku}[${pu}${waktu}${ku}]$st ${bg_cy}bot info${st}${pu} \tspamming to ${ku}${no} ${me}X"
-                       Tulis.strN "${me}[${pu}${waktu}${me}]$st ${bg_ij}bot note${st}${me} \tevery 4 times spam will cause a colddown ( which aims to avoid the web so as not to sulk ;V )"
-                       Tulis.strN "${cy}[${pu}${waktu}${cy}]$st ${bg_me}message${st}${me}  \tsubscribe pejuang kentang${st}\n"
-                    elif (test -z "$req"); then
-                    	 Tulis.strN "${ku}[${pu}${waktu}${ku}]$st ${bg_cy}bot info${st}${pu} \tspamming to ${ku}${no} ${me}X${ku} (${ij}please check your internet${ku})${st}"
-                    	 Tulis.strN "${me}[${pu}${waktu}${me}]$st ${bg_ij}bot note${st}${me} \tevery 4 times spam will cause a colddown ( which aims to avoid the web so as not to sulk ;V )"
-                    	 Tulis.strN "${cy}[${pu}${waktu}${cy}]$st ${bg_me}message${st}${pu}  \tsubscribe pejuang kentang${st}\n"
-                    fi
-        }
-}; class.new: __main__ mode
-
-
-def: delay(){
-	global: text = "$@";
-	var fr : "/_\|";
-	var j : 0;
-	
-	for ((i = 60; i <= i; i--)); do
-		let j++;
-
-		if (test "$j" == 4); then
-			var j : 0;
-		fi
-		sleep 1s
-		printf "\r${pu}${text} ${ij}(${me}${i}${ij})${bi} %s ${st}" "${fr:j:1}"
-
-		if ((i == 0)); then
-			break
-		fi
-	done	 
-}; var times : $(date +%H:%M:%S)
-
-def: gas(){
-	(clear); {
-		var gasken : 1;
-		var selesai : 53;
-
-		for ((column = gasken; column <= selesai; column++)); do
-			if ((column == gasken)); then
-				declare abc+="(~)"
-			elif ((column == selesai)); then
-				declare abc+="(~)"
-			elif ((column == $((selesai / 2)) + 1)); then
-				declare abc+="(~)"
-			elif ((column > 1)); then
-				declare abc+="-"
-			fi
-		done
-
-		declare honda[1]="$cy"
-		declare honda[2]="$ku"
-		declare honda[3]="$hi"
-		declare honda[4]="$m"
-
-		var susuki : $(shuf -i 1-4 -n 1);
-		var supra : $(shuf -i 1-3 -n 1);
-		
-		Tulis.str "$ij"
-		toilet -f slant "Lummo evil";
-		Tulis.str "$st"
-		Tulis.strN "\t\t   ${honda[$susuki]}Lummo ${honda[$supra]}Spamming"
-		echo
-		Tulis.strN "${ku}> ${cy}server   ${me}: ${pu}${bg_cy}lummo shop${st}"
-		Tulis.strN "${m}> ${cy}language ${me}: ${pu}${bg_me}Bash${st}"
-		echo -e "${ij}$abc"
-		Tulis.strN "${ku}|\t${ij}~${me}>${cy} author  ${me}:${pu} speedrun                             ${ku}|"
-		Tulis.strN "${ku}|\t${ij}~${me}>${ij} youtube ${me}:${pu} pejuang kentang                      ${ku}| "
-		Tulis.strN "${ku}|\t${ij}~${me}>${ku} github  ${me}:${pu} Speedrun-bash && Bayu12345677        ${ku}|"
-		echo -e "${ij}$abc${st}"
-		echo
-		Tulis.strN "${me}1${m}.${ku} server ${ij}(${me}sms${ij})"
-		Tulis.strN "${me}2${m}.${cy} server ${ij}(${me}whatsapp${ij})"
-		echo
-		Tulis.str "${ij}[${bi}#${ij}]${ku}(${me}master${ku})${cy}> ${st}"; read send; echo
-
-		if (test -z "$send"); then
-			Tulis.strN "${me}[${ku}${times}${me}]${pu} ${bg_cy}Bot info${st}${pu} \tinput not found${st}"
-			Tulis.strN "${cy}[${ku}${times}${cy}]${pu} ${bg_me}message${st}${ku}  \tPlease fill input${st}";
-			echo
-			exit
-		fi
-		if [[ "$send" =~ [0-9]$ ]]; then
-			var dummy : ""
+#------------------{ fungsi main }--------------------#
+def: main(){
+	 function banner(){
+		var::array: warna = { '$ku' '$me' '$ij' '$bi' '$hi' '$cy' '$m' };# array warna
+		var count_array : $(shuf -i 0-6 -n 1);# random angka 0 sampai 6 dengan 1 kepala
+		var random : $(echo -e "1\n2\n3\n4\n5\n6" | sort -R|head -1);# sama seperti tadi
+		var devices : $(whoami);# menampilkan username
+		#----------------{ validasi username }-------------#
+		if (ambil: devices in root &> /dev/null); then
+			var result : "#";
 		else
-			Tulis.strN "${me}[${pu}${times}${me}]${st}${bg_cy} Bot info${st}${pu} \tinvalid input"
-			Tulis.strN "${cy}[${pu}${times}${cy}]${st}${bg_ij} Bot info${st}${ku} \tinput must be a number${st}"
-			echo
-			exit
+			var result : "$";
 		fi
+	
+		Tulis.strN "${warna[$count_array]}╔═╗${hi}╔╦╗${warna[$random]}╔═╗  ${pu}| ${ku}>${hi} Author  : Speedrun ${ku}||${hi} polygon"
+		Tulis.strN "${warna[$count_array]}╚═╗${hi}║║║${warna[$random]}║    ${pu}| ${ku}>$hi github  : ${m}https://github.com/Speedrun-bash"
+		Tulis.strN "${warna[$count_array]}╚═╝${hi}╩ ╩${warna[$random]}╚═╝  ${pu}| ${ku}>$hi youtube : Pejuang kentang${st}"
+		Tulis.strN "${bi}SMS ${m}& ${ij}CALL\n"
+		Tulis.strN "${me}[${cy}${result}${me}]${m}-${ij}>${cy}(${me}Welcome to my tools${cy})${st}"
+		Tulis.strN "${m}[${me}!${m}] ${pu}note ${st}:${ij} boleh reupload tapi sertakan sumber nya juga"
+		Tulis.strN "${m}[${me}!${m}] ${pu}note ${st}: ${me}[${hi}subscribe pejuang kentang${me}]\n"
+		Tulis.strN "${ij}✗${hi} 1${st}.${pu} ${ku}S${st}PAM SMS ${m}( ${me}MPL PARASITE ${m})"
+		Tulis.strN "${ku}✗$hi 2${st}.$pu ${me}S${st}PAM CALL ${m}( ${me}massive list ${m})"
+		Tulis.strN "${me}✗$hi 3${st}.$pu ${bi}E${st}XIT${me}/${hi}K${st}ELUAR ${m}( ${ij}subscribe pejuang kentang ${m})\n"
+		Tulis.str "${cy}[${ku}•${me}•${cy}]${m}(${me}Chosse${m})${bi}-${ku}> ${st}"
+	};
+
+	(clear);
+	(banner);
+
+	read subscribe_pejuang_kentang
+	echo
+	#---------------------{ validasi input }-----------------#
+	if [[ -z "$subscribe_pejuang_kentang" ]]; then
+		Tulis.strN "${ku}➥ ${pu}Input No Found${st}\n"; exit
+	fi
+	if (test "$subscribe_pejuang_kentang" == "1") || (test "$subscribe_pejuang_kentang" == "01"); then
+		Tulis.strN "${m}[${me}✗${m}] ${cy}Date${hi}  \t$(date +%H:%M:%S)"
+		Tulis.strN "${m}[${me}✗${m}] ${ij}usage$hi \tgunakan 8 tanpa menggunakan 0\n"
+		Tulis.str "${me}(${hi}Target${me})${m}-${ij}> ${st}"; read subrek_bang
+		echo
 		
-		if ((send == 1)); then
-			clear; echo
-			Tulis.strN "${cy}*${m} date${ij}   \t$(date)"
-			Tulis.strN "${ij}*${me} server${bi} \tlummo shop"
-			Tulis.strN "${me}*${cy} metode${pu} \tsms"
+		if [[ -z "$subrek_bang" ]]; then
+			Tulis.strN "${me}➥ ${pu}input not found ${me}✗$st\n"; exit
+		fi
+		#-----------------{ looping mekanisme }---------------#
+		while true; do
+			for x in {1..10}; do
+				spam.sms "$subrek_bang" &
+			done; wait
 			echo
-			Tulis.str "${ij}(${bg_me}target${st}${ij})${m}> ${st}"; read te
-			echo
-
-			if [[ -z "$te" ]]; then
-				Tulis.strN "${cy}[${pu}${times}${cy}]${bg_cy} Bot info${st}${pu} \tinput not found"
-                Tulis.strN "${ku}[${pu}${times}${ku}]${st}${bg_me} message${st}${ku} \tPlease fill input${st}";
-                echo
-                exit
-            fi
-
-			if [[ "$te" =~ [0-9]$ ]]; then
-				dummy=
-			else
-                Tulis.strN "${me}[${pu}${times}${me}]${st}${bg_cy} Bot info${st}${pu} \tinvalid input${st}"
-                Tulis.strN "${cy}[${pu}${times}${cy}]${st}${bg_ij} Bot info${st}${ku} \tinput must be a number${st}"
-                echo
-                exit
-            fi
-            
-			if [[ "${te:0:3}" == "+62" ]]; then
-				var regex_nomer : "$te"
-			elif [[ "${te:0:2}" == 08 ]]; then
-				var regex_nomer : "+62${te:1:15}"
-			elif [[ "${te:0:1}" == 8 ]]; then
-				var regex_nomer : "+62${te}"
-			elif [[ "${te:0:2}" == 62 ]]; then
-				var regex_nomer : "+${te}"
-			fi
-
-			var o : 0
-			while true; do
-				var times : $(date +%H:%M:%S)
-				let o++
-
-				mode.sms "${regex_nomer}"
-				if ((o == 2)); then
-					var o : 0
-					echo
-					delay "please wait"
-					echo; echo
-				fi
+		#-----------------{ countdown mundur }-----------------#
+			for ((x = 60; x >= 0; x--)); do
+				sleep 1
+				Tulis.str "\r${ij}[${me}?${ij}]${bi}-${ij}>${m}(${hi}waiting${m}) ${me}[${bi}$x${me}]${st} "
 			done
-			
-		elif ((send == 2)); then
-                        clear; echo
-                        Tulis.strN "${cy}*${me} date ${hi}  \t$(date)"
-                        Tulis.strN "${me}*${cy} server${pu} \tlummo shop"
-                        Tulis.strN "${ij}*${me} metode${pu} \twhatsapp"
-                        echo
-                        Tulis.str "${ij}(${me}target${ij})${m}> ${st}"; read te
-                        echo
-
-                        if [[ -z "$te" ]]; then
-                                Tulis.strN "${me}[${pu}${times}${me}]${st}${bg_cy} Bot info${st}${pu} \tinput not found"
-                				Tulis.strN "${cy}[${pu}${times}${cy}]${st}${bg_me} message${st}${ku} \tPlease fill input${st}";
-                				echo
-                				exit
-            			fi
-
-                        if [[ "$te" =~ [0-9]$ ]]; then
-                        	dummy=
-                        else
-                        	Tulis.strN "${ku}[${pu}${times}${ku}]${st}${bg_cy} Bot info \tinvalid input"
-                        	Tulis.strN "${me}[${pu}${times}${me}]${st}${bg_ij} Bot info \tinput must be a number${st}"
-                      	    echo
-                        	exit
-            			fi
-
-                        if [[ "${te:0:3}" == "+62" ]]; then
-                                var regex_nomer : "$te"
-                        elif [[ "${te:0:2}" == 08 ]]; then
-                                var regex_nomer : "+62${te:1:15}"
-                        elif [[ "${te:0:1}" == 8 ]]; then
-                                var regex_nomer : "+62${te}"
-                        elif [[ "${te:0:2}" == 62 ]]; then
-                                var regex_nomer : "+${te}"
-                        fi
-
-						let o=0
-                        for ((i = 0; i <= i; i++)); do
-                        	let o++
-
-							mode.wa "$regex_nomer"
-                        	if ((o == 2)); then
-                        		echo
-                        		var o : 0
-                        		delay "Please wait"
-                        		echo
-                        		echo
-                        	fi
-                        done
-                        		
-       		fi
-	}
-};{
-	clear;
-	declare colors=();
-
-	colors[1]="${ku}"
-	colors[2]="${cy}"
-	colors[3]="${ij}"
-	colors[4]="${hi}"
-
-	let limit=9
-	let count=0
-	let model=0
-
-	for x in {1..1}; do
-		for ((i = count; i <= limit; i++)); do
-	
-			let model++
-		
-			if ((model == 1)); then
-				var sys_colors : "${colors[1]}"
-				var sys_warna : "${colors[4]}"
-				var app_symb : "-"
-			elif ((model == 2)); then
-				var sys_colors : "${colors[2]}"
-				var sys_warna : "${colors[3]}"
-				var app_symb : "^"
-			elif ((model == 3)); then
-				var sys_colors : "${colors[3]}"
-				var sys_warna : "${colors[2]}"
-				var app_symb : "/"
-			elif ((model == 4)); then
-				let model=0
-				var sys_colors : "${colors[4]}"
-				var sys_warna : "${colors[1]}"
-				var app_symb : "#"
-			fi
-
-			sleep 01
-			printf "\r${pu}subscribe pejuang kentang ${sys_colors}${app_symb}${st}_${sys_warna}'${st}"
+			echo; echo
 		done
-	done; sleep 1
-		xdg-open https://www.youtube.com/channel/UCtu-GcxKL8kJBXpR1wfMgWg/
-	call:- gas "->" __main__
+	elif (test "$subscribe_pejuang_kentang" == "2") || (test "$subscribe_pejuang_kentang" == "02"); then
+		Tulis.strN "${m}[${me}✗${m}]${pu} Date ${hi} \t$(date +%H:%M:%S)${st}"
+		Tulis.strN "${m}[${me}✗${m}]$ij usage $hi\tgunakan 8 tanpa menggunakan 0"
+		Tulis.strN "${me}[${bi}!${me}]$me Note \t${ij}awalan nomer target pada list harus 8\n"
+		Tulis.str "${bi}[${me}➥${bi}]${ku}(${me}file-list${ku})${ij}-${m}>${st} "; read pejuang_kentang
+		echo
+		
+		if (test -z "$pejuang_kentang"); then
+			Tulis.strN "${me}➥${pu} Input Not Found ${me}✗${st}\n"; exit
+		fi
+
+		if ! (test -f "$pejuang_kentang"); then
+			Tulis.strN "${ku}➥$pu File tidak di temukan$me ✗\n"; exit
+		fi
+
+		if (test -z "$(cat $pejuang_kentang)"); then
+			Tulis.strN "$me➥ ${pu}File empty$me ✗$st\n"; exit
+		fi
+
+		for x in $(cat $pejuang_kentang); do
+			spam.call "$x"
+		done; echo
+		Tulis.strN "${me}[${ij}√${me}]${pu} has been completed\n$st"; exit
+	elif (test "$subscribe_pejuang_kentang" == "3") || (test "$subscribe_pejuang_kentang" == "03"); then
+		Tulis.strN "${me}➥${pu} out of tools$st"
+		Tulis.strN "${me}➥$pu prepare"; sleep 1
+		Tulis.strN "${me}➥ ${m}subscribe pejuang kentang\n$st"; exit
+	fi
+} && {
+	#--------------------{ memulai }-------------------#
+	(clear);{
 	
-  }
+		var ular : 0;
+		var io : 0;
+		var fr1 : 1;
+		var fr2 : 2;
+		var fr3 : 3;
+		var fr4 : 4;
+		
+		for x in {1..3}; do
+			for((i = 0; i <= 4; i++)); do
+				
+				let ular++;
+				let io++;
+				if ((ular == fr1)); then
+					var frame : "-";
+					var kucing : "$bi"
+				elif ((ular == fr2)); then
+					var frame : "+";
+					var kucing : "$me"
+				elif ((ular == fr3)); then
+					var frame : "✗";
+					var kucing : "$ij"
+				elif ((ular == fr4)); then
+					let ular=0;
+					var frame : "•";
+					var kucing : "$pu"
+				elif ((io == 5)); then
+					var frame : "^"
+					var kucing : "${pu}"
+				fi
+
+				Tulis.str "\r${ij}$ ${pu}Subscribe Pejuang kentang ${hi}^${me}_${kucing}${frame}${st}"
+				sleep 01
+			done
+		done; { : "kusus ini jangan di ubah lah anjer"; } && xdg-open https://youtube.com/channel/UCtu-GcxKL8kJBXpR1wfMgWg
+	}
+};main
+
+#-------------------{ MPL & JAGEWARD }--------------#
+#-------------------{ subscribe pejuang kentang }----------------#
+
+# pesan :
+#        subscribe pejuang kentang bang :)
+#        - open source
+#        - anti token

@@ -4,7 +4,7 @@
 
 : '
 
-		               http python
+		               pyreq
 
 merupakan salah satu perpustakaan yg berfungsi untuk mengakses 
 library requests di python menggunakan bash
