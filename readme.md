@@ -1,9 +1,9 @@
 <h2 align="center">SMC</h2>
 
 <p align="center">
-<code><img src="https://img.shields.io/github/issues/Speedrun-bash/SMC-SMS-CALL?logo=github&style=for-the-badge"></code>
-<code><img src="https://img.shields.io/github/license/Speedrun-bash/SMC-SMS-CALL?logo=apache&style=for-the-badge"></code><br>
-<code><img src="https://img.shields.io/static/v1?label=Author&message=Speedrun%20||%20polygon&style=for-the-badge&color=green&logo=archlinux"></code>
+<code><a href="https://github.com/Speedrun-bash"><img src="https://img.shields.io/github/issues/Speedrun-bash/SMC-SMS-CALL?logo=github&style=for-the-badge"></a></code>
+<code><a href="https://github.com/Speedrub-bash"><img src="https://img.shields.io/github/license/Speedrun-bash/SMC-SMS-CALL?logo=apache&style=for-the-badge"></a></code><br>
+<code><a href="https://youtube.com/channel/UCtu-GcxKL8kJBXpR1wfMgWg"><img src="https://img.shields.io/static/v1?label=Author&message=Speedrun%20||%20polygon&style=for-the-badge&color=green&logo=archlinux"></a></code>
 </p><br>
 
 SMC adalah sebuah alat spamming yg berbasis aplication cli
