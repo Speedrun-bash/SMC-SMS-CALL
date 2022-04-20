@@ -1,4 +1,4 @@
-<center><h2>SMC</h2></center>
+<h2 align="center">SMC</h2>
 
 <p align="center">
 <code><img src="https://img.shields.io/github/issues/Speedrun-bash/SMC-SMS-CALL?logo=github&style=for-the-badge"></code>
